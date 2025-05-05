@@ -1,0 +1,141 @@
+
+    .hover-trigger {
+    position: relative;
+}
+
+.map-popup {
+    display: none;
+    margin-top: 10px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hover-trigger:hover .map-popup {
+    display: block;
+}
+.img-container {
+  width: 100%;
+  height: 250px; /* Set desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.img-zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Zoom-in on hover */
+.img-container:hover .img-zoom {
+  transform: scale(1.2); /* Zoom level */
+}
+#subscriber input.form-control {
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+}
+
+#subscriber .btn-primary {
+    padding: 1rem 2rem;
+    border-radius: 0;
+    background-color: #0dcaf0;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+#subscriber .btn-primary:hover {
+    background-color: #0bbdd6;
+}
+
+.skills-progress-bar {
+  padding: 20px;
+}
+
+.progressbar-label h5 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.progress {
+  height: 12px;
+  background-color: #2c2c2c;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  animation: fillBar 3s ease-out forwards;
+}
+
+@keyframes fillBar {
+  to {
+    width: 100%;
+  }
+}
+
+.html-bar { animation-delay: 0s; width: 100%; }
+.css-bar { animation-delay: 0.3s; width: 100%; }
+.js-bar { animation-delay: 0.6s; width: 90%; }
+.php-bar { animation-delay: 0.9s; width: 90%; }
+.jq-bar { animation-delay: 1.2s; width: 100%; }
+.ajax-bar { animation-delay: 1.5s; width: 100%; }
+.bs-bar { animation-delay: 1.8s; width: 100%; }
+
+/* Optional: Loop animation effect */
+.progress-bar:hover {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.5); }
+}
+
+/* Optional: Nice cursor on tooltip hover */
+.single-progress-bar {
+  position: relative;
+  cursor: help;
+}
+
+    .single-service {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+  
+    .single-service:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .service-border {
+      border-radius: 10px;
+      background: #1c1c1c;
+      padding: 20px;
+      transition: background 0.4s ease;
+    }
+  
+    .single-service:hover .service-border {
+      background: #2b2b2b;
+    }
+  
+    .service-img img {
+      max-height: 80px;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+  
+    .single-service:hover .service-img img {
+      transform: scale(1.1);
+    }
