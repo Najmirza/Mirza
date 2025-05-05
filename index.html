@@ -14,69 +14,7 @@
     <title>Mirza</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
-
-
-    
-
-    <style>
-    .hover-trigger {
-    position: relative;
-}
-
-.map-popup {
-    display: none;
-    margin-top: 10px;
-    background: #fff;
-    padding: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.hover-trigger:hover .map-popup {
-    display: block;
-}
-.img-container {
-  width: 100%;
-  height: 250px; /* Set desired height */
-  overflow: hidden;
-  position: relative;
-}
-
-.img-zoom {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease-in-out;
-}
-
-/* Zoom-in on hover */
-.img-container:hover .img-zoom {
-  transform: scale(1.2); /* Zoom level */
-}
-#subscriber input.form-control {
-    padding: 1rem;
-    border-radius: 0;
-    border: none;
-}
-
-#subscriber .btn-primary {
-    padding: 1rem 2rem;
-    border-radius: 0;
-    background-color: #0dcaf0;
-    border: none;
-    transition: background 0.3s ease;
-}
-
-#subscriber .btn-primary:hover {
-    background-color: #0bbdd6;
-}
-
-   
-</style>
-    
-
+    <link rel="stylesheet" href="frontend/css/style.css">
     <!-- css here -->
 
     <link rel="stylesheet" href="frontend/css/bootstrap.min.css">
@@ -165,13 +103,11 @@
                                         <h1 class="cd-headline clip is-full-width">
                                             <span class="cd-words-wrapper">
                                             
-                                             <b >Backend Developer</b>                                   
+                                                                                
                                             <b  class="is-visible" >PHP Developer</b>
                                             
                                                                                 
                                             <b >Web Developer</b>
-
-                                            
                                             
                                                                                 
                                             <b >Laravel Developer</b>
@@ -180,7 +116,7 @@
                                             <!-- <b >UI/UX Designer</b> -->
                                             
                                                                                 
-                                            
+                                            <b >Backend Developer</b>
                                             
                                                                                     </span>
                                         </h1>
@@ -223,13 +159,7 @@
                                     <span class="span"></span>
                                 </div>
                                 <p>My name is Mirza Naj, I am web developer from Odisha, India. I have rich experience in web site design and building and customization, also I am good at Laravel.</p>
-<!--                                 <a href="Mirza Resume.pdf" class="btn mt-30" download="Mirza_Resume.pdf" download> Download CV  </a> -->
-<!--                                 <a href="Mirza%20Resume.pdf" class="btn mt-30" download="Mirza_Resume.pdf">Download CV</a> -->
-<!--                                 <a href="uploads/Mirza Resume.pdf" class="btn mt-30"  download> Download CV  </a> -->
-                                <a href="uploads/Mirza_Resume.pdf" class="btn mt-30" download="Resume">Download CV</a>
-
-
-
+                                <a href="uploads/Mirza Resume.pdf" class="btn mt-30"  download> Download CV  </a>
                                   
                             </div>
                         </div>
@@ -244,62 +174,64 @@
                                     <h1>My Skills.</h1>
                                 </div>
                                 <div class="skills-progress-bar">
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>Html <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Expert in semantic HTML5 and SEO-optimized structures.">
+                                      <div class="progressbar-label">
+                                        <h5>HTML <span class="f-right">100%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar html-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>Css <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Skilled in modern CSS, animations, and layouts (Flex/Grid).">
+                                      <div class="progressbar-label">
+                                        <h5>CSS <span class="f-right">100%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar css-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>JavaScript <span class="f-right">90%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Capable of writing dynamic UI and DOM manipulation logic.">
+                                      <div class="progressbar-label">
+                                        <h5>JavaScript <span class="f-right">90%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar js-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>PHP <span class="f-right">90%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Strong in PHP scripting, logic, and database connectivity.">
+                                      <div class="progressbar-label">
+                                        <h5>PHP <span class="f-right">90%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar php-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>jQuery  <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Experienced in DOM traversal, manipulation, and events.">
+                                      <div class="progressbar-label">
+                                        <h5>jQuery <span class="f-right">100%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar jq-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>AJAX   <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Seamless page loads using Ajax for enhanced UX.">
+                                      <div class="progressbar-label">
+                                        <h5>AJAX <span class="f-right">100%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar ajax-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="single-progress-bar">
-                                        <div class="progressbar-label">
-                                            <h5>Bootstrap <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                    <div class="single-progress-bar" title="Fast, responsive layouts with Bootstrap utilities.">
+                                      <div class="progressbar-label">
+                                        <h5>Bootstrap <span class="f-right">100%</span></h5>
+                                        <div class="progress">
+                                          <div class="progress-bar bs-bar" role="progressbar"></div>
                                         </div>
+                                      </div>
                                     </div>
+                                  </div>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -1025,24 +957,7 @@
                                     </div>
                                 </div>
                                 
-                                <!-- <div class="col-lg-4 grid-item cat6 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img">
-                                            <img class="lazy" src="uploads/loader.gif" data-src="frontend/img/portfolio/6.jpg" alt="frontend/img/portfolio/6.jpg">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/portfolio/6.jpg"><i class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Creative Html5 Template</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
+                               
                             </div>
                         </div>
                     </div>
@@ -1052,62 +967,7 @@
         </section>
         <!-- portfolio area end -->
 
-        <!-- testimonials area start -->
-        <!-- <section id="testimonials" class="pt-65">
-            <div class="testimonials-area">
-                <div class="container">
-                    <div class="row owl-carousel">
-                        <div class="col-lg-10 mx-auto pt-100 pb-100">
-                            <div class="testimonials-main-content text-center">
-                                <div class="testi-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an</p>
-                                </div>
-                                <div class="testi-profile">
-                                    <img class="lazy" src="uploads/loader.gif" data-src="frontend/img/profile/2.jpg" alt="frontend/img/profile/2.jpg">
-                                </div>
-                                <div class="testi-author-name">
-                                    <h4>Jhone Doe</h4>
-                                    <small>Xtream SoftTech</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 mx-auto pt-100 pb-100">
-                            <div class="testimonials-main-content text-center">
-                                <div class="testi-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an</p>
-                                </div>
-                                <div class="testi-profile">
-                                    <img class="lazy" src="uploads/loader.gif" data-src="frontend/img/profile/1.jpg" alt="frontend/img/profile/1.jpg">
-                                </div>
-                                <div class="testi-author-name">
-                                    <h4>Jane Doe</h4>
-                                    <small>LionCoders</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 mx-auto pt-100 pb-100">
-                            <div class="testimonials-main-content text-center">
-                                <div class="testi-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an</p>
-                                </div>
-                                <div class="testi-profile">
-                                    <img class="lazy" src="uploads/loader.gif" data-src="frontend/img/profile/3.jpg" alt="frontend/img/profile/3.jpg">
-                                </div>
-                                <div class="testi-author-name">
-                                    <h4>Mic Jhone</h4>
-                                    <small>XeonBD</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- testimonials area end -->
-
-
-
-
+        
 
         <!-- contact area start -->
         <section id="contact">
@@ -1168,7 +1028,7 @@
                         <div class="col-lg-12">
                             <p class="contact-msg text-center"></p>
                             <div class="contact-form">
-                                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                <form id="contactForm1" action="https://api.web3forms.com/submit" method="POST">
                                     <input type="hidden" name="access_key" value="0754cf38-be2c-4780-87bf-07a997ab9f33">
                     
                                     <div class="row">
@@ -1302,175 +1162,48 @@
     <script src="frontend/js/jquery.meanmenu.min.js"></script>
     <script src="frontend/js/jquery.smoothscroll.js"></script>
     <script src="frontend/js/main.js"></script>
+    <script src="frontend/js/script.js"></script>
 
-    <script>
-        document.getElementById('subscribeForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-        
-            const form = this;
-            const formData = new FormData(form);
-        
-            const response = await fetch(form.action, {
-                method: "POST",
-                body: formData
-            });
-        
-            if (response.ok) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Subscribed!',
-                    text: `Thanks for subscribing! A confirmation has been sent to your email.`,
-                    confirmButtonColor: '#0dcaf0'
-                });
-                form.reset();
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong. Please try again later.'
-                });
-            }
-        });
-        </script>
-        
-        
-        
-
-    <script>
-        var lazyLoadInstance = new LazyLoad({
-            elements_selector: ".lazy"
-        });
-        (function($) {
-            "use strict"
-
-            $('#subscribe').on('submit', function() {
-                event.preventDefault();
-
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-                $.ajax({
-                        type: "POST",
-                        url: "",
-                        data: {
-                            email: $('#subemail').val()
-                        },
-                        success: function(data) {
-                            // show response from the php script.
-                            $('#response').html("Thanks For Subscribed Me");
-                        }
-                    })
-                    .fail(function(error) {
-                        preloader.style.display = 'none';
-                        var err = "<p class='text-white'>Please Enter Valid Url</p>";
-                        $('#response').html(err);
-                    })
-            });
-
-
-            // Contact Message send 
-            $('#contact').on('submit', function() {
-                event.preventDefault();
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var subject = $('#subject').val();
-                var message = $('#message').val();
-
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-                $.ajax({
-                    type: "POST",
-                    url: "",
-                    data: {
-                        name: name,
-                        email: email,
-                        subject: subject,
-                        message: message,
-                    },
-                    success: function(data) {
-                        $('#name').val("");
-                        $('#email').val("");
-                        $('#subject').val("");
-                        $('#message').val("");
-                        // show response from the php script.
-                        $('.contact-msg').html(data);
-
-                    }
-                })
-            });
-        })(jQuery);
-    </script>
-
-    <!-- JavaScript -->
-  <script>
-    const modal = document.getElementById('hireModal');
-    const openBtn = document.getElementById('openModal');
-    const closeBtn = document.getElementById('closeModal');
-
-    openBtn.onclick = function(e) {
-      e.preventDefault();
-      modal.style.display = 'block';
-    }
-
-    closeBtn.onclick = function() {
-      modal.style.display = 'none';
-    }
-
-    window.onclick = function(e) {
-      if (e.target == modal) {
-        modal.style.display = 'none';
-      }
-    }
-  </script>
-
-  <!-- Submit Form Script Code -->
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    const form = document.getElementById('contactForm');
+document.getElementById('contactForm1').addEventListener('submit', function(e) {
+    e.preventDefault(); // 🔥 Prevent the default form submission
 
-    form.addEventListener('submit', async function (e) {
-        e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
 
-        const formData = new FormData(form);
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        });
-
+    fetch(form.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(async response => {
         if (response.ok) {
-            form.reset();
-
-            // SweetAlert Success Popup
             Swal.fire({
                 icon: 'success',
-                title: 'Message sent successfully!',
-                showConfirmButton: false,
-                timer: 3000
+                title: 'Message Sent!',
+                text: 'Thank you for contacting me. I will get back to you soon.',
             });
-
+            form.reset();
         } else {
+            const result = await response.json();
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Something went wrong. Please try again.'
+                text: result.message || 'Something went wrong!',
             });
         }
+    })
+    .catch(error => {
+        console.error(error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Network Error',
+            text: 'Please try again later.',
+        });
     });
+});
 </script>
 
-
-
-
-
-    
 </body>
 
 </html>
