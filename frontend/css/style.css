@@ -139,3 +139,29 @@
     .single-service:hover .service-img img {
       transform: scale(1.1);
     }
+
+
+  .progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    transition: width 1.5s ease-in-out;
+    background-color: #007bff;
+}
+.section-head h1,
+.skills-head-type h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
