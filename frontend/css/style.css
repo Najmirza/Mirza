@@ -152,10 +152,10 @@
       transition: all 0.3s ease;
   }
   
-  /* Add padding to body to prevent content from hiding behind fixed header */
-  body {
-      padding-top: 80px; /* Adjust based on your header height */
-  }
+  
+/*   body {
+      padding-top: 80px; 
+  } */
 
 
 
