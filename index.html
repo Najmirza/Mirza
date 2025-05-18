@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="frontend/css/responsive.css">
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
 
@@ -1175,6 +1176,46 @@
                 </div>
             </div>
         </footer>
+
+
+        <!-- Chat Bot Code Starts -->
+    <div class="live-chat-container">
+        <div class="chat-trigger" onclick="toggleChat()">
+            <i class="fas fa-comment-alt"></i>
+        </div>
+
+        <div class="chat-window">
+            <div class="chat-header">
+                <span>Contact Support</span>
+                <span class="close-chat" onclick="toggleChat()">×</span>
+            </div>
+
+            <div class="chat-content" id="chatContent">
+                <p class="chat-intro-text">
+                    Please fill out the form below and we will<br>get back to you as soon as possible.
+                </p>
+
+                <div class="chat-form-wrapper">
+                    <form id="chatForm">
+                        <div class="form-group">
+                            <input type="text" id="chatName" placeholder="* Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="chatEmail" placeholder="* Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="chatMessage" placeholder="* Message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
         <!-- footer area end -->
 
 
@@ -1253,6 +1294,99 @@ document.getElementById('contactForm1').addEventListener('submit', function(e) {
     mirror: true         // Trigger on scroll up as well
   });
 </script>
+
+    <script>
+        function toggleChat() {
+            const chatWindow = document.querySelector('.chat-window');
+            chatWindow.style.display = chatWindow.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showFormAgain() {
+            document.getElementById('chatContent').innerHTML = `
+      <p class="chat-intro-text">
+        Please fill out the form below and we will<br>get back to you as soon as possible.
+      </p>
+
+      <div class="chat-form-wrapper">
+        <form id="chatForm">
+          <div class="form-group">
+            <input type="text" id="chatName" placeholder="* Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="chatEmail" placeholder="* Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="chatMessage" placeholder="* Message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Submit
+          </button>
+        </form>
+      </div>
+    `;
+
+            // Reattach event listener after form re-renders
+            attachFormListener();
+        }
+
+        function attachFormListener() {
+            document.getElementById('chatForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const formData = new FormData();
+                formData.append('access_key', '0754cf38-be2c-4780-87bf-07a997ab9f33'); // Replace with your Web3Forms access key
+                formData.append('name', document.getElementById('chatName').value);
+                formData.append('email', document.getElementById('chatEmail').value);
+                formData.append('message', document.getElementById('chatMessage').value);
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        const chatContent = document.getElementById('chatContent');
+                        if (data.success) {
+                            chatContent.innerHTML = `
+  <div class="chat-form-wrapper">
+    <div class="chat-message">
+      <p>✅ Thank you! Your message has been sent successfully.<br>We will get back to you shortly.</p>
+      <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
+        Send Again
+      </button>
+    </div>
+  </div>
+`;
+
+                        } else {
+                            chatContent.innerHTML = `
+            <div class="chat-message">
+              <p>❌ Error sending message. Please try again later.</p>
+              <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
+                Try Again
+              </button>
+            </div>
+          `;
+                        }
+                    })
+                    .catch(() => {
+                        const chatContent = document.getElementById('chatContent');
+                        chatContent.innerHTML = `
+          <div class="chat-message">
+            <p>⚠️ Connection error. Please check your internet.</p>
+            <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
+              Try Again
+            </button>
+          </div>
+        `;
+                    });
+            });
+        }
+
+        // Initial listener on load
+        attachFormListener();
+
+    </script>
 
 </body>
 
