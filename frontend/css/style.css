@@ -183,3 +183,146 @@
     display: inline-block;
     border-radius: 4px;
 }
+
+/* Contact Support Css  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.live-chat-container {
+  position: fixed;
+  left: 20px;
+  bottom: 5px;
+  z-index: 1000;
+}
+
+.chat-trigger {
+  background: #0dcaf0;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* When page loads, show the trigger icon smoothly */
+.chat-trigger.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hover effect */
+.chat-trigger:hover {
+  transform: scale(1.15);
+  background: #0ab0d6;
+}
+
+.chat-window {
+  width: 300px;
+  background: #0dcaf0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  overflow: hidden;
+
+  /* ✅ Prevent shrinking after submission */
+  min-height: 460px;
+  /* Adjust based on your form height */
+}
+
+.chat-header {
+  background: #0dcaf0;
+  color: white;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-content {
+  padding: 0 15px 15px;
+}
+
+.chat-intro-text {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 15px 0 10px;
+}
+
+.chat-form-wrapper {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.submit-btn {
+  background: #0dcaf0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background: #0ab0d6;
+}
+
+.close-chat {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-message p {
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+/* Chat Bot Css Code Ends */
