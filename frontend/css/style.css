@@ -326,3 +326,63 @@ body {
   line-height: 1.5;
 }
 /* Chat Bot Css Code Ends */
+
+/* Total Visitors Css Code Start*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    .visitor-counter {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .visitor-label {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .counter-container {
+        display: inline-flex;
+        gap: 3px;
+        font-family: 'Orbitron', monospace;
+        font-size: 1.4rem;
+        background: #000;
+        color: #0f0;
+        padding: 6px 12px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #0f0;
+    }
+
+    .counter-container span {
+        display: inline-block;
+        min-width: 20px;
+        text-align: center;
+    }
+
+    /* .whatsapp-link {
+        display: inline-block;
+        margin-top: -10px;
+    } */
+
+    .social-link ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-link a {
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    .social-link a:hover {
+        color: #0f0;
+    }
+    /* Total Visitors Css Code Ends */
