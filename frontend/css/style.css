@@ -1,25 +1,26 @@
-
-    .hover-trigger {
-    position: relative;
+.hover-trigger {
+  position: relative;
 }
 
 .map-popup {
-    display: none;
-    margin-top: 10px;
-    background: #fff;
-    padding: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  display: none;
+  margin-top: 10px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .hover-trigger:hover .map-popup {
-    display: block;
+  display: block;
 }
+
 .img-container {
   width: 100%;
-  height: 250px; /* Set desired height */
+  height: 250px;
+  /* Set desired height */
   overflow: hidden;
   position: relative;
 }
@@ -33,24 +34,26 @@
 
 /* Zoom-in on hover */
 .img-container:hover .img-zoom {
-  transform: scale(1.2); /* Zoom level */
+  transform: scale(1.2);
+  /* Zoom level */
 }
+
 #subscriber input.form-control {
-    padding: 1rem;
-    border-radius: 0;
-    border: none;
+  padding: 1rem;
+  border-radius: 0;
+  border: none;
 }
 
 #subscriber .btn-primary {
-    padding: 1rem 2rem;
-    border-radius: 0;
-    background-color: #0dcaf0;
-    border: none;
-    transition: background 0.3s ease;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  background-color: #0dcaf0;
+  border: none;
+  transition: background 0.3s ease;
 }
 
 #subscriber .btn-primary:hover {
-    background-color: #0bbdd6;
+  background-color: #0bbdd6;
 }
 
 .skills-progress-bar {
@@ -75,8 +78,10 @@
   height: 100%;
   width: 0;
   border-radius: 6px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(90deg, #00f2ff 0%, #bc13fe 100%);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
   animation: fillBar 3s ease-out forwards;
+  position: relative;
 }
 
 @keyframes fillBar {
@@ -85,22 +90,55 @@
   }
 }
 
-.html-bar { animation-delay: 0s; width: 100%; }
-.css-bar { animation-delay: 0.3s; width: 100%; }
-.js-bar { animation-delay: 0.6s; width: 90%; }
-.php-bar { animation-delay: 0.9s; width: 90%; }
-.jq-bar { animation-delay: 1.2s; width: 100%; }
-.ajax-bar { animation-delay: 1.5s; width: 100%; }
-.bs-bar { animation-delay: 1.8s; width: 100%; }
+.html-bar {
+  animation-delay: 0s;
+  width: 100%;
+}
+
+.css-bar {
+  animation-delay: 0.3s;
+  width: 100%;
+}
+
+.js-bar {
+  animation-delay: 0.6s;
+  width: 90%;
+}
+
+.php-bar {
+  animation-delay: 0.9s;
+  width: 90%;
+}
+
+.jq-bar {
+  animation-delay: 1.2s;
+  width: 100%;
+}
+
+.ajax-bar {
+  animation-delay: 1.5s;
+  width: 100%;
+}
+
+.bs-bar {
+  animation-delay: 1.8s;
+  width: 100%;
+}
 
 /* Optional: Loop animation effect */
 .progress-bar:hover {
   animation: pulse 1.5s infinite alternate;
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.8);
 }
 
 @keyframes pulse {
-  from { filter: brightness(1); }
-  to { filter: brightness(1.5); }
+  from {
+    filter: brightness(1);
+  }
+
+  to {
+    filter: brightness(1.5);
+  }
 }
 
 /* Optional: Nice cursor on tooltip hover */
@@ -109,79 +147,68 @@
   cursor: help;
 }
 
-    .single-service {
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-  
-    .single-service:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-  
-    .service-border {
-      border-radius: 10px;
-      background: #1c1c1c;
-      padding: 20px;
-      transition: background 0.4s ease;
-    }
-  
-    .single-service:hover .service-border {
-      background: #2b2b2b;
-    }
-  
-    .service-img img {
-      max-height: 80px;
-      margin-bottom: 15px;
-      transition: transform 0.4s ease;
-    }
-  
-    .single-service:hover .service-img img {
-      transform: scale(1.1);
-    }
+.single-service {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+}
+
+.single-service .service-img img {
+  max-height: 80px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.single-service:hover .service-img img {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.5));
+}
 
 
 .fixed-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: #fff; /* Adjust background color as needed */
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* This adds the shadow effect */
-      transition: all 0.3s ease;
-  }
-  
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  /* Adjust background color as needed */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* This adds the shadow effect */
+  transition: all 0.3s ease;
+}
+
+
 /*   body {
       padding-top: 80px; 
   } */
 
 
 
-  .progress {
-    height: 8px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    overflow: hidden;
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
 }
+
 .progress-bar {
-    height: 100%;
-    transition: width 1.5s ease-in-out;
-    background-color: #007bff;
+  height: 100%;
+  transition: width 1.5s ease-in-out;
+  background-color: #007bff;
 }
+
 .section-head h1,
 .skills-head-type h1 {
-    font-weight: bold;
-    text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
 .btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 25px;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
 }
 
 /* Contact Support Css  */
@@ -325,64 +352,66 @@ body {
   margin-top: 15px;
   line-height: 1.5;
 }
+
 /* Chat Bot Css Code Ends */
 
 /* Total Visitors Css Code Start*/
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-    .visitor-counter {
-        text-align: center;
-        margin: 20px 0;
-    }
+.visitor-counter {
+  text-align: center;
+  margin: 20px 0;
+}
 
-    .visitor-label {
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: #fff;
-        display: block;
-        margin-bottom: 6px;
-    }
+.visitor-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 6px;
+}
 
-    .counter-container {
-        display: inline-flex;
-        gap: 3px;
-        font-family: 'Orbitron', monospace;
-        font-size: 1.4rem;
-        background: #000;
-        color: #0f0;
-        padding: 6px 12px;
-        border-radius: 8px;
-        box-shadow: 0 0 5px #0f0;
-    }
+.counter-container {
+  display: inline-flex;
+  gap: 3px;
+  font-family: 'Orbitron', monospace;
+  font-size: 1.4rem;
+  background: #000;
+  color: #0f0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #0f0;
+}
 
-    .counter-container span {
-        display: inline-block;
-        min-width: 20px;
-        text-align: center;
-    }
+.counter-container span {
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+}
 
-    /* .whatsapp-link {
+/* .whatsapp-link {
         display: inline-block;
         margin-top: -10px;
     } */
 
-    .social-link ul {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
+.social-link ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
 
-    .social-link a {
-        font-size: 1.5rem;
-        color: #fff;
-        transition: color 0.3s;
-    }
+.social-link a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
 
-    .social-link a:hover {
-        color: #0f0;
-    }
-    /* Total Visitors Css Code Ends */
+.social-link a:hover {
+  color: #0f0;
+}
+
+/* Total Visitors Css Code Ends */
