@@ -1,1700 +1,686 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="KDtDIW8RdVO92YQzOqirUjBUWKkfUhp5jIxiRFRL">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mirza Naj | Premium Portfolio</title>
+    <!-- Favicon -->
     <link rel="icon" href="uploads/logo.png" type="image/ico" sizes="16x16">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <title>Mirza</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
-    <link rel="stylesheet" href="frontend/css/style.css">
-    <!-- css here -->
-
-    <link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-    <link rel="stylesheet" href="frontend/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="frontend/css/animate-heading.css">
-    <link rel="stylesheet" href="frontend/css/magnific-popup.css">
-    <link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="frontend/css/meanmenu.css">
-    <link rel="stylesheet" href="frontend/css/default.css">
-    <link rel="stylesheet" href="frontend/css/dark.css">
-    <link rel="stylesheet" href="frontend/css/modern-enhancements.css">
-
-    <link rel="stylesheet" href="frontend/css/responsive.css">
-
+    
+    <!-- AOS Library for scroll animations -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-
+    
+    <!-- Custom Premium CSS -->
+    <link rel="stylesheet" href="frontend/css/premium.css">
 </head>
-
 <body>
-    <!-- preloader area start -->
-    <div class="loading"></div>
-    <!-- preloader area end -->
-    <!-- headear area start -->
-    <div id="app">
-        <header id="home">
-            <div class="header-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 align-items-center">
-                            <div class="logo">
-                                <a href="#"><img src="uploads/logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-10">
-
-                            <div class="header-btn f-right">
-                                <!-- Button -->
-
-                                <!-- <a href="#" class="btn" id="openModal">Hire Me Now</a> -->
-
-                                <!-- Modal -->
-                                <!-- <div class="modal" id="hireModal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h2>Hire Me</h2>
-      <form action="process_form.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Tell me about the project..." required></textarea>
-        <button type="submit">Send Request</button>
-      </form>
+    <!-- Background Animated Blobs & Particles -->
+    <div id="particles-js"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
-  </div> -->
-                            </div>
-                            <div class="main-menu f-right">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="active"><a href="#home">Home</a></li>
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#service">Service</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="mobile-menu"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- headear area end -->
 
-        <!-- hero area start -->
-        <section>
-            <div class="hero-area" style="background-image: url(uploads/home_bg.jpg)">
-                <div id="particles-js"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div>
-                                <div class="hero-content text-center">
-                                    <div class="typing-head">
-                                        <h3>Hello, I'm</h3>
-                                        <h2>MIRZA NAJ</h2>
-                                    </div>
-                                    <div class="hero-loading-content">
-                                        <h1 class="cd-headline clip is-full-width">
-                                            <span class="cd-words-wrapper">
-
-
-                                                <b class="is-visible">PHP Developer</b>
-                                                <b>Web Developer</b>
-                                                <b>Laravel Developer</b>
-                                                <b>UI/UX Designer</b>
-                                                <b>Backend Developer</b>
-
-                                            </span>
-                                        </h1>
-                                    </div>
-                                    <div class="hero-social-link">
-
-
-                                        <!-- <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
-
-                                        <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank">
-                                            <i class="fab fa-linkedin"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/najmirza786/" target="_blank"><i
-                                                class="fab fa-instagram"></i></a>
-
-                                        <!-- <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a> -->
-                                    </div>
-                                </div>
-                                <a href="#about">
-                                    <div class="animation-mouse">
-                                        <div class="mouse"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- hero area end -->
-
-        <!-- about area start -->
-        <section id="about" data-aos="fade-up">
-            <div class="about-area pt-100 pb-100">
-                <div class="container">
-                    <div class="row">
-                        <!-- About Text -->
-                        <div class="col-lg-4 valign" data-aos="fade-right">
-                            <div class="content mb-50">
-                                <div class="section-head text-left mb-30">
-                                    <h1>ABOUT ME</h1>
-                                    <span class="span"></span>
-                                </div>
-                                <p>
-                                    My name is <strong>Mirza Naj</strong>,a Backend Developer specializing in PHP and Laravel, with experience in building RESTful APIs, implementing role-based access control (RBAC), optimizing MySQL databases, developing secure authentication systems, and designing scalable backend architectures.
-                                </p>
-                                <a href="uploads/Resume0303.pdf" class="btn mt-30" download>Download CV</a>
-                            </div>
-                        </div>
-
-                        <!-- Profile Image -->
-                        <div class="col-lg-4" data-aos="zoom-in">
-                            <div class="about-hero-img text-center">
-                                <img class="img-fluid lazy" src="uploads/loader.gif"
-                                    data-src="frontend/img/service/profile.jpeg" alt="Profile Picture">
-                            </div>
-                        </div>
-
-                        <!-- Skills -->
-                        <div class="col-lg-4" data-aos="fade-left">
-                            <div class="content mb-50">
-                                <div class="skills-head-type">
-                                    <h1>My Skills.</h1>
-                                </div>
-                                <div class="skills-progress-bar">
-                                    <!-- Skill Item -->
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="100">
-                                        <div class="progressbar-label">
-                                            <h5>HTML <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar html-bar" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="200">
-                                        <div class="progressbar-label">
-                                            <h5>CSS <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar css-bar" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="300">
-                                        <div class="progressbar-label">
-                                            <h5>JavaScript <span class="f-right">90%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar js-bar" style="width:90%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="400">
-                                        <div class="progressbar-label">
-                                            <h5>PHP <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar php-bar" style="width:90%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="400">
-                                        <div class="progressbar-label">
-                                            <h5>Laravel <span class="f-right">80%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar laravel-bar" style="width:90%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="500">
-                                        <div class="progressbar-label">
-                                            <h5>jQuery <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar jq-bar" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="600">
-                                        <div class="progressbar-label">
-                                            <h5>AJAX <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar ajax-bar" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-progress-bar" data-aos="fade-up" data-aos-delay="700">
-                                        <div class="progressbar-label">
-                                            <h5>Bootstrap <span class="f-right">100%</span></h5>
-                                            <div class="progress">
-                                                <div class="progress-bar bs-bar" style="width:100%"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Skill Item -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Skills -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about area end -->
-
-        <!-- resume area start -->
-        <!-- AOS CSS (Put in your <head>) -->
-
-
-         <section id="experience">
-            <div class="resume-area">
-                <div class="resume-head-title text-center mb-40 pt-100" data-aos="fade-down">
-                    <div class="col-lg-6 mx-auto">
-                        <h1>My Experience</h1>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <!-- Job 1: Current Position -->
-                        <div class="col-lg-6 mb-30" data-aos="fade-right" data-aos-delay="100">
-                            <div class="single-resume">
-                                <div class="single-resume-card">
-                                    <h3>PHP Laravel Developer</h3>
-                                    <h4>Script Dev Technology, Cuttack</h4>
-                                    <div class="expreience-band">
-                                        <span>2025 - Present</span>
-                                    </div>
-                                    <p>
-                                        Currently working as <strong>PHP Laravel Developer at Script Dev Technology,
-                                            Cuttack, Odisha</strong>,
-                                        where I develop and maintain enterprise-level web applications using Laravel
-                                        framework and modern PHP practices.
-                                        My responsibilities include building RESTful APIs, implementing secure
-                                        authentication systems,
-                                        database optimization, integrating third-party services, and collaborating with
-                                        cross-functional teams
-                                        to deliver scalable, high-performance solutions. I focus on writing clean,
-                                        maintainable code while
-                                        following best practices and design patterns.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Job 2: Previous PHP Role -->
-                        <div class="col-lg-6 mb-30" data-aos="fade-left" data-aos-delay="200">
-                            <div class="single-resume">
-                                <div class="single-resume-card">
-                                    <h3>PHP Web Developer</h3>
-                                    <h4>Zanthium Technosoft Pvt Ltd, Uttarakhand</h4>
-                                    <div class="expreience-band">
-                                        <span>2023 - 2025</span>
-                                    </div>
-                                    <p>
-                                        Worked as <strong>PHP Web Developer at Zanthium Technosoft Pvt Ltd, Uttarakhand,
-                                            India</strong>,
-                                        where I was involved in developing and maintaining web applications using modern
-                                        technologies.
-                                        My role included writing clean and efficient PHP code, integrating databases
-                                        (MySQL, PostgreSQL),
-                                        collaborating with UI/UX designers to implement responsive interfaces, and
-                                        ensuring cross-browser compatibility.
-                                        I contributed to multiple client projects with a focus on performance
-                                        optimization, security best practices,
-                                        and scalable architecture.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Job 3: Business Facilitator Role -->
-                        <div class="col-lg-6 mb-30" data-aos="fade-right" data-aos-delay="300">
-                            <div class="single-resume">
-                                <div class="single-resume-card">
-                                    <h3>Business Facilitator</h3>
-                                    <h4>Union Bank of India, Balichandrapur</h4>
-                                    <div class="expreience-band">
-                                        <span>2016 - 2023</span>
-                                    </div>
-                                    <p>
-                                        Worked as a <strong>Business Facilitator at Union Bank of India,
-                                            Balichandrapur</strong>,
-                                        where I supported the bank's outreach and financial inclusion efforts.
-                                        My responsibilities included identifying potential customers, promoting banking
-                                        services,
-                                        assisting in account openings, guiding customers through loan application
-                                        processes,
-                                        and creating awareness about financial products and government schemes — all
-                                        without
-                                        handling cash or performing financial transactions directly.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- resume area end -->
-
-        <!-- service area start -->
-        <section id="service" class="pt-100">
-            <div class="service-area">
-                <div class="service-head-title text-center mb-40 pt-100" data-aos="fade-up">
-                    <div class="col-lg-6 mx-auto">
-                        <h1>My Services</h1>
-                        <p>
-                            I offer professional web development services including responsive website design, dynamic
-                            web application development, PHP/MySQL backend solutions, and bug fixing.
-                            I specialize in creating clean, user-friendly, and performance-optimized websites tailored
-                            to client needs.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-main-content pb-70">
-                    <div class="container">
-                        <div class="row">
-
-                            <!-- Service 1 -->
-                            <div class="col-lg-4" data-aos="fade-right">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/1.png" alt="Web Development">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>Custom Website Development</h4>
-                                            <p>Build responsive and fully functional websites tailored to client
-                                                requirements using modern technologies.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service 2 -->
-                            <div class="col-lg-4" data-aos="zoom-in">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/2.png" alt="PHP MySQL Solutions">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>PHP & MySQL Solutions</h4>
-                                            <p>Develop secure, database-driven web applications using PHP and MySQL for
-                                                dynamic content handling.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service 3 -->
-                            <div class="col-lg-4" data-aos="fade-left">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/3.png" alt="Responsive Design">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>Responsive Design</h4>
-                                            <p>Ensure websites are mobile-friendly, fully responsive, and optimized for
-                                                all screen sizes and devices.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service 4 -->
-                            <div class="col-lg-4" data-aos="flip-left">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/4.png" alt="Bug Fixing">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>Website Maintenance & Bug Fixing</h4>
-                                            <p>Provide ongoing support, bug fixing, performance tuning, and regular
-                                                updates to keep your site running smoothly.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service 5 -->
-                            <div class="col-lg-4" data-aos="zoom-out-up">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/5.png" alt="API Integration">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>API Integration</h4>
-                                            <p>Integrate third-party APIs and internal services to enhance
-                                                functionality, streamline workflows, and enable real-time data exchange.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service 6 -->
-                            <div class="col-lg-4" data-aos="flip-up">
-                                <div class="single-service text-center">
-                                    <div class="service-border">
-                                        <div class="service-img">
-                                            <img class="img-fluid lazy" src="uploads/loader.gif"
-                                                data-src="frontend/img/service/6.png" alt="Additional Service">
-                                        </div>
-                                        <div class="service-content">
-                                            <h4>Custom Solutions</h4>
-                                            <p>Deliver unique and flexible solutions based on specific business goals
-                                                and customer requirements.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- service area end -->
-
-        <!-- portfolio area start -->
-        <section id="portfolio">
-            <div class="portfolio-area pt-100" data-aos="zoom-in-left" data-aos-delay="200">
-                <div class="portfolio-head-title text-center mb-40">
-                    <div class="col-lg-6 mx-auto">
-                        <h1>My Works</h1>
-                        <p>I have worked extensively in PHP, developing user dashboards, admin dashboards, and
-                            integrating various APIs to enhance functionality and streamline user experience.</p>
-                    </div>
-                </div>
-                <div class="portfolio-main-area">
-                    <div class="container">
-                        <div class="">
-                            <div class="text-center mx-auto mb-40">
-                                <div class="portfolio-category">
-                                    <nav>
-                                        <ul>
-                                            <li class="active"><a href="#" data-filter="*">All</a></li>
-                                            <li><a href="#" data-filter=".cat1">User Dashboard</a></li>
-                                            <li><a href="#" data-filter=".cat2">Website</a></li>
-                                            <li><a href="#" data-filter=".cat3">Admin Dashboard</a></li>
-                                            <li><a href="#" data-filter=".cat4">Laravel</a></li>
-                                            <li><a href="#" data-filter=".cat5">E-commerce & Recharge</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="row grid portfolio-item">
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard1.png"
-                                                alt="frontend/img/work/userDashboard1.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard1.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">SuccessLine User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard2.png"
-                                                alt="frontend/img/work/userDashboard2.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard2.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">BattleX User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard3.png"
-                                                alt="frontend/img/work/userDashboard3.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard3.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">RoboticPay User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard15.png"
-                                                alt="frontend/img/work/userDashboard15.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard15.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">YEHM User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard4.png"
-                                                alt="frontend/img/work/userDashboard4.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard4.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">NKMU User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard5.png"
-                                                alt="frontend/img/work/userDashboard5.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard5.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">GreenFarming User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard6.png"
-                                                alt="frontend/img/work/userDashboard6.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard6.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Helping User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard7.png"
-                                                alt="frontend/img/work/userDashboard7.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard7.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">ImaginePool User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard8.png"
-                                                alt="frontend/img/work/userDashboard8.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard8.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Kulsoft User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard9.png"
-                                                alt="frontend/img/work/userDashboard9.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard9.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Mgx Global User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard10.png"
-                                                alt="frontend/img/work/userDashboard10.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard10.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Rapid Fx User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard11.png"
-                                                alt="frontend/img/work/userDashboard11.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard11.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">RealWellness User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard13.png"
-                                                alt="frontend/img/work/userDashboard13.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard13.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">WealthyCrowd User
-                                                            Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat1 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/userDashboard14.png"
-                                                alt="frontend/img/work/userDashboard14.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/userDashboard14.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">YEHM User Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website1.png"
-                                                alt="frontend/img/work/website1.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website1.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Robotic Pay Website</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website2.png"
-                                                alt="frontend/img/work/website2.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website2.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Eg Best Website</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website3.png"
-                                                alt="frontend/img/work/website3.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website3.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Mgx Global Website</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website4.png"
-                                                alt="frontend/img/work/website4.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website4.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">SuccessLine Pay Website</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website5.png"
-                                                alt="frontend/img/work/website5.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website5.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Vertex Global Website</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website6.png"
-                                                alt="frontend/img/work/website6.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website6.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Vertex Global Website</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website7.png"
-                                                alt="frontend/img/work/website7.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website7.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">YEHM Website</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat2 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/website8.png"
-                                                alt="frontend/img/work/website8.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/website8.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Bit Wings Website</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat3 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/adminDash2.png"
-                                                alt="frontend/img/work/adminDash2.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/adminDash2.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">4BM Admin Dashboard</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat3 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/adminDash1.png"
-                                                alt="frontend/img/work/adminDash1.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/adminDash1.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Admin Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat3 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/adminDash3.png"
-                                                alt="frontend/img/work/adminDash3.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/adminDash3.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Admin Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-lg-4 grid-item cat4 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/laravelDash.png"
-                                                alt="frontend/img/work/laravelDash.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/laravelDash.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Laravel Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat4 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/LaraWebsite.png"
-                                                alt="frontend/img/work/LaraWebsite.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/LaraWebsite.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">LaraCoffee</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat4 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/LaraCoffeeDasboard.png"
-                                                alt="frontend/img/work/LaraCoffeeDasboard.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup"
-                                                            href="frontend/img/work/LaraCoffeeDasboard.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Laravel Dashboard</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat4 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/dashboard.png"
-                                                alt="frontend/img/work/dashboard.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/dashboard.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Laravel Task System</a>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat4 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/login.png"
-                                                alt="frontend/img/work/login.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/login.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Mirza Auth System</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat5 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/Ecomm.png"
-                                                alt="frontend/img/work/Ecomm.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/Ecomm.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">YEHM E-commerce</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 grid-item cat5 mb-30">
-                                    <div class="portfolio">
-                                        <div class="portfolio-img img-container">
-                                            <img class="lazy img-stretch" src="uploads/loader.gif"
-                                                data-src="frontend/img/work/rechargeApi.png"
-                                                alt="frontend/img/work/rechargeApi.png">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="hover-effect">
-                                                <div class="icon-hover">
-                                                    <span><a class="popup" href="frontend/img/work/rechargeApi.png"><i
-                                                                class="fas fa-plus-circle"></i></a></span>
-                                                </div>
-                                                <div class="hover-content">
-
-                                                    <h1><a href="#" target="_self" id="link">Recharge API</a> </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- portfolio area end -->
-
-
-
-        <!-- contact area start -->
-        <section id="contact">
-            <div class="contact-area pt-100">
-                <div class="contact-head-title text-center mb-40">
-                    <div class="col-lg-6 mx-auto">
-                        <h1>Contact Me</h1>
-
-                        <p>Feel free to reach out for project collaborations, freelance opportunities, or any queries.
-                            I'm always open to discussing new ideas and building innovative solutions.</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-lg-4">
-                            <div class="text-center">
-                                <div class="single-contact-info">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <div class="info mt-3">
-                                        <h5>Call Me</h5>
-                                        <p>9937762490</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="text-center">
-                                <div class="single-contact-info">
-                                    <i class="far fa-envelope"></i>
-                                    <div class="info mt-3">
-                                        <h5>Email Us At</h5>
-
-                                        <p><a href="mailto:najmirza7867@gmail.com">najmirza7867@gmail.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="text-center">
-                                <div class="single-contact-info hover-trigger">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div class="info mt-3">
-                                        <h5>Visit Office</h5>
-                                        <p>Cuttack, Odisha</p>
-                                        <div class="map-popup">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.821863506871!2d85.880204174892!3d20.173763681221196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909cb3c19c0b1%3A0x36b0f725ed40b0d1!2sCuttack%2C%20Odisha!5e0!3m2!1sen!2sin!4v1714565098123!5m2!1sen!2sin"
-                                                width="350" height="300" style="border:0;" allowfullscreen=""
-                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-12">
-                            <p class="contact-msg text-center"></p>
-                            <div class="contact-form">
-                                <form id="contactForm1" action="https://api.web3forms.com/submit" method="POST">
-                                    <input type="hidden" name="access_key" value="0754cf38-be2c-4780-87bf-07a997ab9f33">
-
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" id="name" class="form-control" placeholder="Name*"
-                                                    name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" id="email" class="form-control" placeholder="Email*"
-                                                    name="email" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input type="text" id="subject" class="form-control"
-                                                    placeholder="Subject*" name="subject" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="message" name="message"
-                                                    placeholder="Message..." required></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn f-right">Send Message</button>
-                                </form>
-
-                                <div id="formStatus" class="text-center mt-3" style="display: none; color: green;">
-                                    Message sent successfully! Redirecting...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact area end -->
-        <!-- subscriber area start -->
-        <section id="subscriber" class="pt-100" style="background-color: #111; color: #fff;">
-            <div class="subscriber-area">
-                <div class="container pb-100 pt-100">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2 text-center">
-                            <div class="subscriber-logo mb-3">
-                                <span style="font-size: 3rem; color: #0dcaf0;"><i
-                                        class="far fa-envelope-open"></i></span>
-                            </div>
-                            <div class="subscriber-content mb-4">
-                                <h1 class="text-white">Stay Updated!</h1>
-                                <p class="text-light">Subscribe to receive the latest news, updates, and more.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 offset-lg-3">
-                            <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="0754cf38-be2c-4780-87bf-07a997ab9f33">
-                                <input type="hidden" name="subject" value="New Subscription Confirmation">
-                                <input type="hidden" name="from_name" value="Your Name or Website">
-
-                                <div class="input-group">
-                                    <input type="email" name="email" id="subemail" class="form-control"
-                                        placeholder="Enter your email..." required>
-                                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- subscriber area end -->
-        <!-- footer area start -->
-        <footer>
-            <div class="footer-area">
-                <div class="container">
-                    <div class="row justify-content-center text-center">
-                        <div class="col-lg-12">
-
-                            <!-- Visitor Counter (Centered) -->
-                            <div class="visitor-counter">
-                                <span class="visitor-label">Total Visitors:</span>
-                                <div class="counter-container" id="visitorCounter">
-                                    <!-- Visitor digits will be inserted here via JS -->
-                                </div>
-                            </div>
-
-                            <!-- Social Links -->
-                            <div class="social-link">
-                                <nav>
-                                    <ul>
-                                        <li>
-                                            <a href="https://wa.me/919937762490" target="_blank" class="whatsapp-link">
-                                                <i class="fab fa-whatsapp"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank">
-                                                <i class="fab fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/najmirza786/" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-
-                            <div class="footer-copyright">
-                                <p>2025 © <a href="#">Portfolio All Rights Reserved</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-        <!-- Chat Bot Code Starts -->
-        <div class="live-chat-container">
-            <div class="chat-trigger" onclick="toggleChat()">
-                <i class="fas fa-comment-alt"></i>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <h1>Mirza Naj</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#recent-projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <a href="hire-me.html" class="btn-primary">Hire Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero mb-20">
+        <div class="hero-content">
+            <!-- Available Badge -->
+            <div data-aos="zoom-in" data-aos-delay="100" style="display: inline-block; padding: 5px 18px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 1px;">
+                <i class="fa fa-circle" style="font-size: 8px; vertical-align: middle; margin-right: 6px; animation: pulse 2s infinite;"></i> AVAILABLE FOR WORK
             </div>
 
-            <div class="chat-window">
-                <div class="chat-header">
-                    <span>Contact Support</span>
-                    <span class="close-chat" onclick="toggleChat()">×</span>
+            <span class="hero-greeting" data-aos="zoom-in" data-aos-delay="200">Hello, I'm Mirza Naj</span>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                Crafting <span class="highlight">Premium</span> Web Experiences
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                A passionate Backend / PHP Laravel Developer &amp; UI/UX enthusiast specializing in scalable architecture, secure APIs, and stunning, dynamic user interfaces.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                <a href="#recent-projects" class="btn-primary"><i class="fa fa-rocket" style="margin-right:8px"></i>View My Work</a>
+                <a href="uploads/Resume0303.pdf" class="btn-outline" download><i class="fa fa-download" style="margin-right:8px"></i>Download CV</a>
+            </div>
+
+            <!-- Hero Stats -->
+            <div data-aos="fade-up" data-aos-delay="600" style="display: flex; justify-content: center; gap: 3rem; margin-top: 3.5rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">20+</div>
+                    <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">PROJECTS DONE</div>
                 </div>
+                <div style="width: 1px; background: var(--border-color); height: 50px; align-self: center;"></div>
+                <div style="text-align: center;">
+                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3+</div>
+                    <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">YRS EXPERIENCE</div>
+                </div>
+                <div style="width: 1px; background: var(--border-color); height: 50px; align-self: center;"></div>
+                <div style="text-align: center;">
+                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">10+</div>
+                    <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">HAPPY CLIENTS</div>
+                </div>
+            </div>
+            
+            <div class="social-links mt-5" style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1.5rem;" data-aos="fade-up" data-aos-delay="700">
+                <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/najmirza786/" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/najmirza" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
 
-                <div class="chat-content" id="chatContent">
-                    <p class="chat-intro-text">
-                        Please fill out the form below and we will<br>get back to you as soon as possible.
-                    </p>
+    <!-- Tech Stack Infinite Marquee -->
+    <div class="tech-marquee-wrapper" data-aos="fade-up">
+        <div class="tech-marquee">
+            <span><i class="fab fa-php"></i> PHP</span>
+            <span><i class="fab fa-laravel"></i> Laravel</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fab fa-react"></i> React.js</span>
+            <span><i class="fab fa-vuejs"></i> Vue.js</span>
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa fa-database"></i> MySQL</span>
+            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+            <span><i class="fab fa-git-alt"></i> Git</span>
+            <!-- Duplicate for infinite scroll -->
+            <span><i class="fab fa-php"></i> PHP</span>
+            <span><i class="fab fa-laravel"></i> Laravel</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fab fa-react"></i> React.js</span>
+            <span><i class="fab fa-vuejs"></i> Vue.js</span>
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa fa-database"></i> MySQL</span>
+            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+            <span><i class="fab fa-git-alt"></i> Git</span>
+        </div>
+    </div>
 
-                    <div class="chat-form-wrapper">
-                        <form id="chatForm">
-                            <div class="form-group">
-                                <input type="text" id="chatName" placeholder="* Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="chatEmail" placeholder="* Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="chatMessage" placeholder="* Message" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane"></i> Submit
-                            </button>
-                        </form>
+    <!-- About & Skills Section -->
+    <section id="about">
+        <div class="section-head" data-aos="fade-up">
+            <h2>About &amp; Skills</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">The person behind the code &mdash; my background, skills, and expertise.</p>
+        </div>
+        <div class="about-grid">
+            <div class="glass-panel about-text" data-aos="fade-right">
+                <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Who I Am</h3>
+                <p style="color: var(--text-muted); line-height: 1.9;">
+                    My name is <strong style="color: white;">Mirza Naj</strong>, a Backend Developer with deep expertise in PHP and Laravel. I have a proven track record of building robust RESTful APIs, implementing role-based access control (RBAC), optimizing complex MySQL databases, and developing secure authentication protocols.
+                </p>
+                <p style="color: var(--text-muted); line-height: 1.9; margin-top: 1rem;">
+                    Beyond backend engineering, I'm passionate about building applications that are not only performant but also beautifully designed on the frontend using modern CSS, JavaScript, and dynamic libraries.
+                </p>
+                <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-php" style="margin-right:5px;"></i>PHP</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-laravel" style="margin-right:5px;"></i>Laravel</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fa fa-database" style="margin-right:5px;"></i>MySQL</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-js" style="margin-right:5px;"></i>JavaScript</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-react" style="margin-right:5px;"></i>React.js</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-vuejs" style="margin-right:5px;"></i>Vue.js</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-git-alt" style="margin-right:5px;"></i>Git</span>
+                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-bootstrap" style="margin-right:5px;"></i>Bootstrap</span>
+                    <!-- AI Tools — highlighted distinctly -->
+                    <span style="padding: 5px 14px; background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(79,70,229,0.15)); border: 1px solid rgba(139,92,246,0.5); border-radius: 50px; font-size: 0.85rem; color: #a78bfa; font-weight: 600;"><i class="fa fa-robot" style="margin-right:5px;"></i>AI Tools</span>
+                </div>
+            </div>
+            
+            <div class="glass-panel" data-aos="fade-left">
+                <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1.5rem;">Core Competencies</h3>
+                <div class="skills-container">
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>PHP / Laravel</span><span>95%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>JavaScript / jQuery / AJAX</span><span>90%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>HTML / CSS / Bootstrap</span><span>100%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 100%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>Database Architecture (MySQL)</span><span>90%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>API Development &amp; Security</span><span>85%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>RESTful API Design</span><span>88%</span></div>
+                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 88%"></div></div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
+    <!-- Recent Highlights (The 3 Recent Projects Added) -->
+    <section id="recent-projects">
+        <div class="section-head" data-aos="fade-up">
+            <h2>Recent Innovations</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My latest state-of-the-art developments and integrations.</p>
+        </div>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="frontend/img/work/crypto_exchange_platform_1774703070219.png" alt="Crypto Exchange Platform" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge new">Recent</span>
+                        <span class="badge">Laravel</span>
+                        <span class="badge">API</span>
+                        <span class="badge">WebSockets</span>
+                    </div>
+                    <h3 class="project-title">Crypto Exchange Platform</h3>
+                    <p class="project-desc">A premium cryptocurrency trading platform featuring live swaps, real-time market data, seamless wallet modal integrations, and a sophisticated dark mode UI for focused trading.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="frontend/img/work/data_pro_dashboard_1774703130641.png" alt="Data Pro Dashboard" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge new">Recent</span>
+                        <span class="badge">UI/UX</span>
+                        <span class="badge">Analytics</span>
+                        <span class="badge">PHP</span>
+                    </div>
+                    <h3 class="project-title">Data Pro Dashboard</h3>
+                    <p class="project-desc">A highly interactive smart real-time dashboard delivering complex data analytics. Features include dynamic data grids, comprehensive sidebar routing, and state-of-the-art charting capabilities.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="frontend/img/work/photography_asset_protection_1774703155454.png" alt="Photography Protection" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge new">Recent</span>
+                        <span class="badge">Security</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Frontend</span>
+                    </div>
+                    <h3 class="project-title">Asset Protection System</h3>
+                    <p class="project-desc">An advanced security implementation for photography portfolios. Includes right-click disabling, drag prevention, source obfuscation, and screenshot deterrence to protect high-value assets securely.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
 
-        <!-- footer area end -->
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-head" data-aos="fade-up">
+            <h2>Professional Journey</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My career trajectory from banking to full-stack engineering.</p>
+        </div>
+        <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025 - Present</div>
+                    <h3 class="timeline-title">PHP Laravel Developer</h3>
+                    <div class="timeline-company">Script Dev Technology, Cuttack</div>
+                    <p class="timeline-text">
+                        Developing enterprise-level web applications using the Laravel framework. Key responsibilities include designing RESTful APIs, securing authentication systems, and improving database optimization to deliver scalable solutions in a high-performance environment.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - 2025</div>
+                    <h3 class="timeline-title">PHP Web Developer</h3>
+                    <div class="timeline-company">Zanthium Technosoft Pvt Ltd, Uttarakhand</div>
+                    <p class="timeline-text">
+                        Oversaw backend architecture and relational database integration (MySQL/PostgreSQL) for various clients. Partnered closely with UI/UX designers to implement pixel-perfect, secure interfaces and optimized legacy PHP systems for higher cross-browser scalability.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2016 - 2023</div>
+                    <h3 class="timeline-title">Business Facilitator</h3>
+                    <div class="timeline-company">Union Bank of India, Balichandrapur</div>
+                    <p class="timeline-text">
+                        Supported extensive financial inclusion efforts by educating customers, streamlining loan application processes, and promoting a comprehensive suite of banking products without handling direct transactions. Emphasized strong client relations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview Section -->
+    <section id="other-projects">
+        <div class="section-head" data-aos="fade-up">
+            <h2>Complete Portfolio</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">A curated selection of my past implementations across multiple domains.</p>
+        </div>
+
+        <div class="projects-grid grid-portfolio">
+
+            <!-- Card 1 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/ecommerce_laravel_1774873325797.png" alt="E-Commerce Laravel" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-desc">A fully featured modern e-commerce platform with a sleek shopping cart dashboard and seamless payment logic.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/task_management_1774873372292.png" alt="Task Management" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">CRM / Tasks</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Role-Based Task Manager</h3>
+                    <p class="project-desc">Complex role-based task management system with data grids, permissions, and multi-user tracking features.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="frontend/img/work/adminDash1.png" alt="Admin Dashboard" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Admin</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Admin Console</h3>
+                    <p class="project-desc">Robust administrative panel for complex data management and system oversight.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="frontend/img/work/userDashboard1.png" alt="SuccessLine UI" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">User Dash</span><span class="badge">PHP</span></div>
+                    <h3 class="project-title">SuccessLine Dashboard</h3>
+                    <p class="project-desc">A fully equipped user dashboard for managing account details and performance analytics.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="frontend/img/work/website3.png" alt="Corporate Landing" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Landing Page</span><span class="badge">HTML5</span></div>
+                    <h3 class="project-title">Corporate Landing</h3>
+                    <p class="project-desc">A modern and fully responsive corporate website offering a smooth user experience.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="frontend/img/work/Ecomm.png" alt="Digital Storefront" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Cart</span></div>
+                    <h3 class="project-title">Digital Storefront</h3>
+                    <p class="project-desc">Robust e-commerce solution facilitating secure checkout and scalable product listings.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View All CTA -->
+        <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; margin-top: 3.5rem;">
+            <a href="portfolio.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 40px; font-size: 1.1rem;">
+                <i class="fa fa-th-large"></i>
+                <span>View All Projects</span>
+                <i class="fa fa-arrow-right"></i>
+            </a>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">Showing 6 of 20+ projects</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services">
+        <div class="section-head" data-aos="fade-up">
+            <h2>My Services</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                I offer professional web development services including responsive website design, dynamic web application development, PHP/MySQL backend solutions, and bug fixing.
+            </p>
+        </div>
+        <div class="projects-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem;">
+            
+            <!-- Service 1 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="50">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/1.png" alt="Website Development">
+                </div>
+                <h3>Custom Website Development</h3>
+                <p>Build responsive and fully functional websites tailored to client requirements using modern technologies.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/2.png" alt="PHP MySQL Solutions">
+                </div>
+                <h3>PHP & MySQL Solutions</h3>
+                <p>Develop secure, database-driven web applications using PHP and MySQL for dynamic content handling.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/3.png" alt="Responsive Design">
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Ensure websites are mobile-friendly, fully responsive, and optimized for all screen sizes and devices.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/4.png" alt="Bug Fixing">
+                </div>
+                <h3>Maintenance & Bug Fixing</h3>
+                <p>Provide ongoing support, bug fixing, performance tuning, and regular updates to keep your site running smoothly.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/5.png" alt="API Integration">
+                </div>
+                <h3>API Integration</h3>
+                <p>Integrate third-party APIs and internal services to enhance functionality, streamline workflows, and enable real-time data exchange.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon-wrapper">
+                    <img src="frontend/img/service/6.png" alt="Custom Solutions">
+                </div>
+                <h3>Custom Solutions</h3>
+                <p>Deliver unique and flexible solutions based on specific business goals and customer requirements.</p>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- CTA / Contact -->
+    <section id="contact" style="max-width: 860px; margin: 0 auto; padding-bottom: 80px;">
+        <div class="section-head" data-aos="fade-up" style="margin-bottom: 2rem;">
+            <h2>Let's Build Something Great</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">Whether you have a specific project in mind, need an advanced backend solution, or want to revamp your architecture &mdash; I'd love to hear from you.</p>
+        </div>
+        
+        <!-- Quick Contact Pills -->
+        <div data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <a href="mailto:najmirza7867@gmail.com" target="_blank" style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;" onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
+                <i class="fa fa-envelope" style="color: var(--secondary);"></i> najmirza7867@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;" onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
+                <i class="fab fa-linkedin" style="color: var(--secondary);"></i> LinkedIn Profile
+            </a>
+        </div>
+
+        <div class="glass-panel contact-form-wrapper" data-aos="zoom-in" data-aos-delay="150" style="padding: 3rem;">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group" style="position: relative;">
+                    <label for="con-name">Your Name</label>
+                    <i class="fa fa-user" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
+                    <input type="text" id="con-name" name="name" class="form-control" placeholder="John Doe" style="padding-left: 45px;" required>
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <label for="con-email">Your Email</label>
+                    <i class="fa fa-envelope" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
+                    <input type="email" id="con-email" name="email" class="form-control" placeholder="john@example.com" style="padding-left: 45px;" required>
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1; position: relative;">
+                    <label for="con-message">Project Details</label>
+                    <i class="fa fa-pen" style="position: absolute; top: 43px; left: 18px; color: var(--secondary);"></i>
+                    <textarea id="con-message" name="message" rows="4" class="form-control" placeholder="Tell me about your project needs..." style="padding-left: 45px;" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="grid-column: 1 / -1; margin-top: 10px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px;">
+                    <span>Send Message</span> <i class="fa fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <img src="" id="modalImage" alt="Project Preview">
+                <div class="modal-info">
+                    <h3 id="modalTitle">Project Title</h3>
+                    <p id="modalDesc">Project description goes here...</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col" data-aos="fade-up">
+                <h2>Mirza Naj</h2>
+                <p>Passionate Backend / PHP Laravel Developer & UI/UX enthusiast specializing in scalable architecture and stunning interfaces.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/najmirza786/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/najmirza" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links-col" data-aos="fade-up" data-aos-delay="100">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> About</a></li>
+                    <li><a href="#experience"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Experience</a></li>
+                    <li><a href="#recent-projects"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Projects</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col services-col" data-aos="fade-up" data-aos-delay="200">
+                <h3>My Services</h3>
+                <ul>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Custom Websites</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> API Integrations</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Laravel Solutions</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Database Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col" data-aos="fade-up" data-aos-delay="300">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa fa-envelope" style="min-width: 20px;"></i> contact@mirzanaj.com</li>
+                    <li><i class="fa fa-phone" style="min-width: 20px;"></i> Available on Request</li>
+                    <li><i class="fa fa-map-marker-alt" style="min-width: 20px;"></i> India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mirza Naj. Crafted with <i class="fa fa-heart" style="color: #e53e3e; margin: 0 5px;"></i> and premium aesthetics.</p>
+        </div>
+    </footer>
 
-    <!-- back to top -->
-    <a href="#home" class="back_top"> <i class="fas fa-angle-up"></i> </a>
-
-    <!-- js here -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="frontend/js/lazyload.min.js"></script>
-    <script src="frontend/js/vendor/jquery-3.2.1.min.js"></script>
-    <script src="frontend/js/popper.min.js"></script>
-    <script src="frontend/js/bootstrap.min.js"></script>
-    <script src="frontend/js/animate-heading.js"></script>
-    <script src="frontend/js/particles.js"></script>
-    <script src="frontend/js/particles-custom.js"></script>
-    <script src="frontend/js/tilt.jquery.min.js"></script>
-    <script src="frontend/js/jquery.nav.min.js"></script>
-    <script src="frontend/js/isotope.pkgd.min.js"></script>
-    <script src="frontend/js/imagesloaded.pkgd.min.js"></script>
-    <script src="frontend/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="frontend/js/owl.carousel.min.js"></script>
-    <script src="frontend/js/jquery.meanmenu.min.js"></script>
-    <script src="frontend/js/jquery.smoothscroll.js"></script>
-    <script src="frontend/js/main.js"></script>
-    <script src="frontend/js/script.js"></script>
-
-
-    <script>
-        document.getElementById('contactForm1').addEventListener('submit', function (e) {
-            e.preventDefault(); // 🔥 Prevent the default form submission
-
-            const form = e.target;
-            const formData = new FormData(form);
-
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-                .then(async response => {
-                    if (response.ok) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Message Sent!',
-                            text: 'Thank you for contacting me. I will get back to you soon.',
-                        });
-                        form.reset();
-                    } else {
-                        const result = await response.json();
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: result.message || 'Something went wrong!',
-                        });
-                    }
-                })
-                .catch(error => {
-                    console.error(error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Network Error',
-                        text: 'Please try again later.',
-                    });
-                });
-        });
-    </script>
-    <!-- AOS JS (Place before closing </body>) -->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        // Init Particles JS
+        if(typeof particlesJS !== 'undefined') {
+            particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#0ea5e9"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#4f46e5","opacity":0.4,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        }
+
+        // Init AOS
         AOS.init({
-            duration: 1000,      // Animation duration in ms
-            once: false,         // Allow animation more than once
-            mirror: true         // Trigger on scroll up as well
-        });
-    </script>
-
-    <script>
-        function toggleChat() {
-            const chatWindow = document.querySelector('.chat-window');
-            chatWindow.style.display = chatWindow.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function showFormAgain() {
-            document.getElementById('chatContent').innerHTML = `
-      <p class="chat-intro-text">
-        Please fill out the form below and we will<br>get back to you as soon as possible.
-      </p>
-
-      <div class="chat-form-wrapper">
-        <form id="chatForm">
-          <div class="form-group">
-            <input type="text" id="chatName" placeholder="* Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="chatEmail" placeholder="* Email" required>
-          </div>
-          <div class="form-group">
-            <textarea id="chatMessage" placeholder="* Message" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">
-            <i class="fas fa-paper-plane"></i> Submit
-          </button>
-        </form>
-      </div>
-    `;
-
-            // Reattach event listener after form re-renders
-            attachFormListener();
-        }
-
-        function attachFormListener() {
-            document.getElementById('chatForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                const formData = new FormData();
-                formData.append('access_key', '0754cf38-be2c-4780-87bf-07a997ab9f33'); // Replace with your Web3Forms access key
-                formData.append('name', document.getElementById('chatName').value);
-                formData.append('email', document.getElementById('chatEmail').value);
-                formData.append('message', document.getElementById('chatMessage').value);
-
-                fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        const chatContent = document.getElementById('chatContent');
-                        if (data.success) {
-                            chatContent.innerHTML = `
-  <div class="chat-form-wrapper">
-    <div class="chat-message">
-      <p>✅ Thank you! Your message has been sent successfully.<br>We will get back to you shortly.</p>
-      <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
-        Send Again
-      </button>
-    </div>
-  </div>
-`;
-
-                        } else {
-                            chatContent.innerHTML = `
-            <div class="chat-message">
-              <p>❌ Error sending message. Please try again later.</p>
-              <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
-                Try Again
-              </button>
-            </div>
-          `;
-                        }
-                    })
-                    .catch(() => {
-                        const chatContent = document.getElementById('chatContent');
-                        chatContent.innerHTML = `
-          <div class="chat-message">
-            <p>⚠️ Connection error. Please check your internet.</p>
-            <button onclick="showFormAgain()" class="submit-btn" style="margin-top: 15px;">
-              Try Again
-            </button>
-          </div>
-        `;
-                    });
-            });
-        }
-
-        // Initial listener on load
-        attachFormListener();
-
-    </script>
-
-    <script>
-        // Visitor counter functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initialize with 270 if no existing count
-            let count = localStorage.getItem('visitorCount') || 270;
-            count = parseInt(count) + 1;
-
-            // Store updated count
-            localStorage.setItem('visitorCount', count);
-
-            // Format number with leading zeros
-            const countStr = String(count).padStart(6, '0');
-            const counter = document.getElementById('visitorCounter');
-
-            // Create digit elements
-            counter.innerHTML = Array.from(countStr).map(d =>
-                `<span>${d}</span>`
-            ).join('');
-        });
-    </script>
-
-    <script>
-        // Disable right-click
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-            alert("Right Click is disabled by Owner.");
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
         });
 
-        // Disable Ctrl+C (Copy)
-        document.addEventListener('keydown', function (e) {
-            if (e.ctrlKey && e.key === 'c') {
-                e.preventDefault();
-                alert("Right Click is disabled by Owner.");
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '15px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.9)';
+                nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+            } else {
+                nav.style.padding = '20px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.7)';
+                nav.style.boxShadow = 'none';
             }
         });
-    </script>
 
-    <!--Start of Tawk.to Script-->
-    <!-- 
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/691ea872eb22e4196020d1e3/1jafs40h7';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    -->
-    <!--End of Tawk.to Script-->
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement){
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
 
+        // Portfolio Filtering
+        $(document).ready(function(){
+            $('.filter-btn').on('click', function() {
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                let filterValue = $(this).attr('data-filter');
+                
+                if(filterValue === 'all') {
+                    $('.filter-item').fadeIn(400);
+                } else {
+                    $('.filter-item').hide();
+                    $('.filter-item.' + filterValue).fadeIn(400);
+                }
+                
+                // Fix AOS Trigger Points when height collapses
+                setTimeout(function() {
+                    AOS.refresh();
+                }, 450);
+            });
+
+            // Project Modal Logic
+            $('.project-card').on('click', function() {
+                const imgSrc = $(this).find('img').attr('src');
+                const title = $(this).find('.project-title').text();
+                const desc = $(this).find('.project-desc').text();
+
+                $('#modalImage').attr('src', imgSrc);
+                $('#modalTitle').text(title);
+                $('#modalDesc').text(desc);
+
+                $('#projectModal').addClass('open');
+                $('body').css('overflow', 'hidden'); // Prevent background scrolling
+            });
+
+            $('#modalClose, #modalBackdrop').on('click', function() {
+                $('#projectModal').removeClass('open');
+                $('body').css('overflow', '');
+            });
+            
+            // Close on Escape key
+            $(document).keyup(function(e) {
+                if (e.key === "Escape") {
+                    $('#projectModal').removeClass('open');
+                    $('body').css('overflow', '');
+                }
+            });
+
+            // Web3Forms AJAX Integration for Contact Section
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                let btn = $(this).find('button[type="submit"]');
+                let originalText = btn.html();
+                
+                btn.html('<i class="fa fa-spinner fa-spin"></i> Sending...');
+                btn.prop('disabled', true);
+                btn.css('opacity', '0.7');
+
+                $.ajax({
+                    url: "https://api.web3forms.com/submit",
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        access_key: "0754cf38-be2c-4780-87bf-07a997ab9f33",
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        message: $('#message').val(),
+                        subject: "New Contact Message from Portfolio Homepage!"
+                    }),
+                    dataType: "json",
+                    success: function(response) {
+                        btn.html('Message Sent Successfully! <i class="fa fa-check ms-2"></i>');
+                        btn.css({'background': '#10b981', 'opacity': '1', 'border-color': '#10b981', 'box-shadow': '0 0 20px rgba(16, 185, 129, 0.4)'});
+                        $('#contactForm')[0].reset();
+                        
+                        setTimeout(() => {
+                            btn.html(originalText);
+                            btn.css({'background': '', 'border-color': '', 'box-shadow': ''});
+                            btn.prop('disabled', false);
+                        }, 4000);
+                    },
+                    error: function(err) {
+                        btn.html('Error Sending. Try Again!');
+                        btn.css({'background': '#ef4444', 'opacity': '1', 'border-color': '#ef4444'});
+                        
+                        setTimeout(() => {
+                            btn.html(originalText);
+                            btn.css({'background': '', 'border-color': ''});
+                            btn.prop('disabled', false);
+                        }, 4000);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

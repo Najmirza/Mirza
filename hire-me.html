@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire Mirza Naj | Premium Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" href="uploads/logo.png" type="image/ico" sizes="16x16">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Library for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Premium CSS -->
+    <link rel="stylesheet" href="frontend/css/premium.css">
+
+    <style>
+        /* Specific Hire-Me Page Styles */
+        body {
+            padding-top: 100px;
+            /* Offset for fixed navbar */
+        }
+
+        .hire-hero {
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .hire-hero h1 {
+            font-size: 3.5rem;
+            font-family: var(--font-heading);
+            background: linear-gradient(135deg, #fff, var(--secondary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .hire-hero p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .hire-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .method-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .method-card:hover {
+            background: rgba(14, 165, 233, 0.1);
+            border-color: var(--secondary);
+            transform: translateX(10px);
+        }
+
+        .method-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px var(--primary-glow);
+        }
+
+        .method-info h4 {
+            font-size: 1.1rem;
+            font-family: var(--font-heading);
+            color: var(--text-main);
+            margin-bottom: 0.2rem;
+        }
+
+        .method-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        select.form-control option {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+        }
+
+        @media (max-width: 900px) {
+            .hire-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Animated Blobs & Particles -->
+    <div id="particles-js"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Mirza Naj</h1>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#recent-projects">Projects</a></li>
+            <li><a href="index.html#services">Services</a></li>
+        </ul>
+        <a href="hire-me.html" class="btn-primary active">Hire Me</a>
+    </nav>
+
+    <!-- Hire Hero -->
+    <section class="hire-hero" data-aos="fade-down">
+        <h1>Let's Build Something Extraordinary</h1>
+        <p>Whether you need a full-scale web application, a robust PHP/Laravel backend architecture, or a reliable
+            consultant for your next big project, I'm ready to help.</p>
+    </section>
+
+    <!-- Content Grid -->
+    <section style="padding: 0 5% 5rem 5%;">
+        <div class="hire-grid">
+
+            <!-- Contact Info & Methods -->
+            <div class="contact-methods" data-aos="fade-right" data-aos-delay="100">
+                <div style="display: inline-block; padding: 5px 15px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 1px; width: fit-content;">
+                    <i class="fa fa-circle" style="font-size: 8px; vertical-align: middle; margin-right: 5px; animation: pulse 2s infinite;"></i> AVAILABLE FOR HIRE
+                </div>
+                <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Direct Contact</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">I am currently available
+                    for freelance projects, remote contracting, and full-time backend engineering opportunities. Reach
+                    out to me directly through any of the following channels.</p>
+
+                <a href="mailto:najmirza7867@gmail.com" target="_blank" class="method-card">
+                    <div class="method-icon"><i class="fa fa-envelope"></i></div>
+                    <div class="method-info">
+                        <h4>Email Me</h4>
+                        <p>najmirza7867@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" class="method-card">
+                    <div class="method-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="method-info">
+                        <h4>LinkedIn</h4>
+                        <p>Connect professionally</p>
+                    </div>
+                </a>
+
+                <div class="glass-panel" style="margin-top: 2rem; padding: 2rem;">
+                    <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1rem; color: white;">
+                        Working Models</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 15px; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start;">
+                            <i class="fa fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                            <div><strong style="color:white;">Project Based:</strong> Fixed scope architectures and API
+                                builds.</div>
+                        </li>
+                        <li
+                            style="margin-bottom: 15px; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start;">
+                            <i class="fa fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                            <div><strong style="color:white;">Retainer / Hourly:</strong> Ongoing maintenance and
+                                iterative scaling.</div>
+                        </li>
+                        <li
+                            style="margin-bottom: 0px; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start;">
+                            <i class="fa fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                            <div><strong style="color:white;">Full-Time Roles:</strong> Dedicated remote backend
+                                engineering teams.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- In-Depth Contact Form -->
+            <div class="glass-panel" data-aos="fade-left" data-aos-delay="200" style="padding: 3rem;">
+                <h3
+                    style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">
+                    Request a Proposal</h3>
+                <form id="proposalForm" class="contact-form">
+                    <div class="form-group" style="grid-column: 1 / -1; position: relative;">
+                        <label for="name">Full Name / Company Name</label>
+                        <i class="fa fa-user" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary); font-size: 1rem;"></i>
+                        <input type="text" id="name" class="form-control" placeholder="E.g. John Doe / TechCorp" style="padding-left: 45px;" required>
+                    </div>
+                    <div class="form-group" style="position: relative;">
+                        <label for="email">Email Address</label>
+                        <i class="fa fa-envelope" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary); font-size: 1rem;"></i>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" style="padding-left: 45px;" required>
+                    </div>
+                    <div class="form-group" style="position: relative;">
+                        <label for="phone">Phone Number</label>
+                        <i class="fa fa-phone" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary); font-size: 1rem;"></i>
+                        <input type="tel" id="phone" class="form-control" placeholder="+91 9876543210" style="padding-left: 45px;" required>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1; position: relative;">
+                        <label for="message">Project Description</label>
+                        <i class="fa fa-pen" style="position: absolute; top: 43px; left: 18px; color: var(--secondary); font-size: 1rem;"></i>
+                        <textarea id="message" rows="5" class="form-control"
+                            placeholder="Tell me about your tech stack needs, project goals, and timeline..." style="padding-left: 45px;"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"
+                        style="grid-column: 1 / -1; margin-top: 15px; width: 100%; font-size: 1.1rem; padding: 15px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <span>Submit Proposal</span> <i class="fa fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer" style="margin-top: 0;">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2>Mirza Naj</h2>
+                <p>Passionate Backend / PHP Laravel Developer & UI/UX enthusiast specializing in scalable architecture
+                    and stunning interfaces.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/najmirza786/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/najmirza" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Home</a></li>
+                    <li><a href="index.html#about"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            About</a></li>
+                    <li><a href="index.html#experience"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Experience</a></li>
+                    <li><a href="index.html#recent-projects"><i class="fa fa-chevron-right"
+                                style="font-size: 0.6rem;"></i> Projects</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col services-col">
+                <h3>My Services</h3>
+                <ul>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Custom Websites</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> API
+                            Integrations</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Laravel Solutions</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Database Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa fa-envelope" style="min-width: 20px;"></i> contact@mirzanaj.com</li>
+                    <li><i class="fa fa-phone" style="min-width: 20px;"></i> Available on Request</li>
+                    <li><i class="fa fa-map-marker-alt" style="min-width: 20px;"></i> India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mirza Naj. Crafted with <i class="fa fa-heart" style="color: #e53e3e; margin: 0 5px;"></i>
+                and premium aesthetics.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Init Particles JS
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#0ea5e9" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#4f46e5", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+        }
+
+        // Init AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '15px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.9)';
+                nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+            } else {
+                nav.style.padding = '20px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.7)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Web3Forms AJAX Integration
+        $(document).ready(function () {
+            $('#proposalForm').on('submit', function (e) {
+                e.preventDefault();
+
+                let btn = $(this).find('button[type="submit"]');
+                let originalText = btn.html();
+
+                // Set button to loading state
+                btn.html('<i class="fa fa-spinner fa-spin"></i> Sending Request...');
+                btn.prop('disabled', true);
+                btn.css('opacity', '0.7');
+
+                $.ajax({
+                    url: "https://api.web3forms.com/submit",
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        access_key: "0754cf38-be2c-4780-87bf-07a997ab9f33",
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        phone: $('#phone').val(),
+                        message: $('#message').val(),
+                        subject: "New Proposal Request from Portfolio!"
+                    }),
+                    dataType: "json",
+                    success: function (response) {
+                        // Success State
+                        btn.html('Message Sent Successfully! <i class="fa fa-check ms-2"></i>');
+                        btn.css({ 'background': '#10b981', 'opacity': '1', 'border-color': '#10b981', 'box-shadow': '0 0 20px rgba(16, 185, 129, 0.4)' });
+                        $('#proposalForm')[0].reset();
+
+                        // Reset button after 4 seconds
+                        setTimeout(() => {
+                            btn.html(originalText);
+                            btn.css({ 'background': '', 'border-color': '', 'box-shadow': '' });
+                            btn.prop('disabled', false);
+                        }, 4000);
+                    },
+                    error: function (err) {
+                        // Error State
+                        btn.html('Error Sending. Try Again!');
+                        btn.css({ 'background': '#ef4444', 'opacity': '1', 'border-color': '#ef4444' });
+
+                        setTimeout(() => {
+                            btn.html(originalText);
+                            btn.css({ 'background': '', 'border-color': '' });
+                            btn.prop('disabled', false);
+                        }, 4000);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

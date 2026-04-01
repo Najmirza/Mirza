@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Projects | Mirza Naj Portfolio</title>
+    <meta name="description" content="Complete portfolio of 20+ web development projects by Mirza Naj — Laravel, PHP, Admin Dashboards, E-Commerce, and APIs.">
+    <link rel="icon" href="uploads/logo.png" type="image/ico" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/css/premium.css">
+    <style>
+        body { padding-top: 100px; }
+
+        .portfolio-hero {
+            text-align: center;
+            padding: 3rem 5% 1rem 5%;
+        }
+        .portfolio-hero h1 {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            background: linear-gradient(135deg, #fff, var(--secondary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.8rem;
+        }
+        .portfolio-hero p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--secondary);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .back-link:hover { opacity: 0.75; }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div id="particles-js"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none;"><h1>Mirza Naj</h1></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="portfolio.html" class="active">Projects</a></li>
+            <li><a href="index.html#services">Services</a></li>
+        </ul>
+        <a href="hire-me.html" class="btn-primary">Hire Me</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="portfolio-hero" data-aos="fade-down">
+        <a href="index.html#other-projects" class="back-link"><i class="fa fa-arrow-left"></i> Back to Home</a>
+        <h1>Complete Portfolio</h1>
+        <p>Every project I've built — from enterprise dashboards to scalable APIs. Filter by category to explore.</p>
+
+        <!-- Stats Row -->
+        <div style="display: flex; justify-content: center; gap: 3rem; margin-top: 2rem; flex-wrap: wrap;" data-aos="fade-up" data-aos-delay="100">
+            <div style="text-align: center;">
+                <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">20+</div>
+                <div style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px;">TOTAL PROJECTS</div>
+            </div>
+            <div style="width: 1px; background: var(--border-color); height: 40px; align-self: center;"></div>
+            <div style="text-align: center;">
+                <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">6</div>
+                <div style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px;">CATEGORIES</div>
+            </div>
+            <div style="width: 1px; background: var(--border-color); height: 40px; align-self: center;"></div>
+            <div style="text-align: center;">
+                <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3+</div>
+                <div style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px;">YRS ACTIVE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Controls -->
+    <section style="padding: 2rem 5% 0 5%;">
+        <div class="filter-controls" data-aos="fade-up" style="text-align: center; margin-bottom: 3rem;">
+            <button class="filter-btn active" data-filter="all">All Works</button>
+            <button class="filter-btn" data-filter="submissions">Laravel Submissions</button>
+            <button class="filter-btn" data-filter="admin">Admin Dashboards</button>
+            <button class="filter-btn" data-filter="user">User Dashboards</button>
+            <button class="filter-btn" data-filter="web">Websites</button>
+            <button class="filter-btn" data-filter="api">E-commerce &amp; API</button>
+        </div>
+
+        <div class="projects-grid grid-portfolio">
+
+            <!-- LARAVEL SUBMISSIONS -->
+            <div class="project-card filter-item submissions" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/ecommerce_laravel_1774873325797.png" alt="E-Commerce Laravel" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-desc">A fully featured modern e-commerce platform with a sleek shopping cart dashboard and seamless payment logic.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item submissions" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/task_management_1774873372292.png" alt="Task Management" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">CRM / Tasks</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Role-Based Task Manager</h3>
+                    <p class="project-desc">Complex role-based task management system with data grids, permissions, and multi-user tracking features.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item submissions" data-aos="zoom-in" data-aos-delay="150">
+                <img src="frontend/img/work/social_media_clone_1774873395450.png" alt="Social Media Clone" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Social Media</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Social Network Core</h3>
+                    <p class="project-desc">A deep architectural clone of a social network featuring dynamic feeds, authentication, and user relationship mapping.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item submissions" data-aos="zoom-in" data-aos-delay="200">
+                <img src="frontend/img/work/dashboard.png" alt="Smart Desk" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Helpdesk</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Smart Desk Support System</h3>
+                    <p class="project-desc">An interactive helpdesk and ticketing system dashboard providing live analytics and ticket routing interfaces.</p>
+                </div>
+            </div>
+
+            <!-- ADMIN DASHBOARDS -->
+            <div class="project-card filter-item admin" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/adminDash1.png" alt="Admin Dashboard" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Admin</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Admin Console</h3>
+                    <p class="project-desc">Robust administrative panel for complex data management and system oversight.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item admin" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/adminDash3.png" alt="Business CRM" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">CRM</span><span class="badge">PHP</span></div>
+                    <h3 class="project-title">Business CRM</h3>
+                    <p class="project-desc">Customer relationship management UI supporting mass records routing.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item admin" data-aos="zoom-in" data-aos-delay="150">
+                <img src="frontend/img/work/laravelDash.png" alt="SaaS Dashboard" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">SaaS</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">SaaS Management UI</h3>
+                    <p class="project-desc">Full-featured multi-tenant software as a service platform dashboard.</p>
+                </div>
+            </div>
+
+            <!-- USER DASHBOARDS -->
+            <div class="project-card filter-item user" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/userDashboard1.png" alt="SuccessLine" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">User Dash</span><span class="badge">PHP</span></div>
+                    <h3 class="project-title">SuccessLine Dashboard</h3>
+                    <p class="project-desc">A fully equipped user dashboard for managing account details and performance analytics.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item user" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/userDashboard3.png" alt="RoboticPay" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Finance</span><span class="badge">UI/UX</span></div>
+                    <h3 class="project-title">RoboticPay User Interface</h3>
+                    <p class="project-desc">Secure financial dashboard enabling seamless transaction histories and top-ups.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item user" data-aos="zoom-in" data-aos-delay="150">
+                <img src="frontend/img/work/userDashboard4.png" alt="NKMU Portal" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Portal</span><span class="badge">Bootstrap</span></div>
+                    <h3 class="project-title">NKMU Member Portal</h3>
+                    <p class="project-desc">Centralized portal for members to update profiles and interact with organizations.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item user" data-aos="zoom-in" data-aos-delay="200">
+                <img src="frontend/img/work/userDashboard7.png" alt="ImaginePool" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Trading</span><span class="badge">AJAX</span></div>
+                    <h3 class="project-title">ImaginePool Analytics</h3>
+                    <p class="project-desc">Dynamic data rendering for investment pool statistics using AJAX requests.</p>
+                </div>
+            </div>
+
+            <!-- WEBSITES -->
+            <div class="project-card filter-item web" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/website3.png" alt="Corporate Landing" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Landing Page</span><span class="badge">HTML5</span></div>
+                    <h3 class="project-title">Corporate Landing</h3>
+                    <p class="project-desc">A modern and fully responsive corporate website offering a smooth user experience.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item web" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/website5.png" alt="Creative Agency" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Agency</span><span class="badge">CSS3</span></div>
+                    <h3 class="project-title">Creative Agency</h3>
+                    <p class="project-desc">Highly visual portfolio presentation layout focused on branding and media.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item web" data-aos="zoom-in" data-aos-delay="150">
+                <img src="frontend/img/work/LaraWebsite.png" alt="Laravel App Shell" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">Dynamic</span><span class="badge">Laravel</span></div>
+                    <h3 class="project-title">Laravel App Shell</h3>
+                    <p class="project-desc">Dynamic frontend wrapper running entirely on Laravel blade templates.</p>
+                </div>
+            </div>
+
+            <!-- ECOMMERCE & API -->
+            <div class="project-card filter-item api" data-aos="zoom-in" data-aos-delay="50">
+                <img src="frontend/img/work/Ecomm.png" alt="Digital Storefront" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Cart</span></div>
+                    <h3 class="project-title">Digital Storefront</h3>
+                    <p class="project-desc">Robust e-commerce solution facilitating secure checkout and scalable product listings.</p>
+                </div>
+            </div>
+            <div class="project-card filter-item api" data-aos="zoom-in" data-aos-delay="100">
+                <img src="frontend/img/work/rechargeApi.png" alt="Telecom Recharge API" class="project-img">
+                <div class="project-content">
+                    <div class="project-badges"><span class="badge">API Builder</span><span class="badge">Telecom</span></div>
+                    <h3 class="project-title">Telecom Recharge API</h3>
+                    <p class="project-desc">A complex API integration serving high-volume transactional queries for multiple networks.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <img src="" id="modalImage" alt="Project Preview">
+                <div class="modal-info">
+                    <h3 id="modalTitle">Project Title</h3>
+                    <p id="modalDesc">Project description goes here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="premium-footer" style="margin-top: 4rem;">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2>Mirza Naj</h2>
+                <p>Passionate Backend / PHP Laravel Developer &amp; UI/UX enthusiast specializing in scalable architecture and stunning interfaces.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/najmirza786/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/najmirza" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Home</a></li>
+                    <li><a href="index.html#about"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> About</a></li>
+                    <li><a href="index.html#experience"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Experience</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> All Projects</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col services-col">
+                <h3>My Services</h3>
+                <ul>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Custom Websites</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> API Integrations</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Laravel Solutions</a></li>
+                    <li><a href="index.html#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Database Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa fa-envelope" style="min-width: 20px;"></i> najmirza7867@gmail.com</li>
+                    <li><i class="fa fa-phone" style="min-width: 20px;"></i> Available on Request</li>
+                    <li><i class="fa fa-map-marker-alt" style="min-width: 20px;"></i> India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mirza Naj. Crafted with <i class="fa fa-heart" style="color: #e53e3e; margin: 0 5px;"></i> and premium aesthetics.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if(typeof particlesJS !== 'undefined') {
+            particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#0ea5e9"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#4f46e5","opacity":0.4,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        }
+
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '15px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.9)';
+                nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.5)';
+            } else {
+                nav.style.padding = '20px 5%';
+                nav.style.background = 'rgba(5, 5, 5, 0.7)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        $(document).ready(function(){
+            // Portfolio Filtering
+            $('.filter-btn').on('click', function() {
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                let filterValue = $(this).attr('data-filter');
+                if(filterValue === 'all') {
+                    $('.filter-item').fadeIn(400);
+                } else {
+                    $('.filter-item').hide();
+                    $('.filter-item.' + filterValue).fadeIn(400);
+                }
+                setTimeout(function() { AOS.refresh(); }, 450);
+            });
+
+            // Project Modal Logic
+            $('.project-card').on('click', function() {
+                const imgSrc = $(this).find('img').attr('src');
+                const title = $(this).find('.project-title').text();
+                const desc = $(this).find('.project-desc').text();
+                $('#modalImage').attr('src', imgSrc);
+                $('#modalTitle').text(title);
+                $('#modalDesc').text(desc);
+                $('#projectModal').addClass('open');
+                $('body').css('overflow', 'hidden');
+            });
+
+            $('#modalClose, #modalBackdrop').on('click', function() {
+                $('#projectModal').removeClass('open');
+                $('body').css('overflow', '');
+            });
+
+            $(document).keyup(function(e) {
+                if (e.key === "Escape") {
+                    $('#projectModal').removeClass('open');
+                    $('body').css('overflow', '');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
