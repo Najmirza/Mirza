@@ -110,6 +110,7 @@
             color: var(--text-muted);
             font-size: 0.9rem;
             margin: 0;
+            word-break: break-all;
         }
 
         select.form-control option {
@@ -117,9 +118,45 @@
             color: var(--text-main);
         }
 
+        /* Responsive Breakpoints */
         @media (max-width: 900px) {
             .hire-grid {
                 grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hire-hero {
+                padding: 3rem 5% 2rem 5%;
+            }
+            .hire-hero h1 {
+                font-size: 2.5rem;
+            }
+            .hire-hero p {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hire-hero h1 {
+                font-size: 2rem;
+            }
+            .method-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+                padding: 1.5rem 1rem;
+            }
+            .glass-panel {
+                padding: 1.5rem !important;
+            }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+            }
+            .form-control {
+                padding: 14px 14px 14px 45px !important;
             }
         }
     </style>
@@ -144,11 +181,35 @@
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#recent-projects">Projects</a></li>
+            <li><a href="index.html#recent-projects">Innovations</a></li>
+            <li><a href="portfolio.html">All Projects</a></li>
             <li><a href="index.html#services">Services</a></li>
         </ul>
-        <a href="hire-me.html" class="btn-primary active">Hire Me</a>
+        <a href="hire-me.html" class="btn-primary nav-hire-btn active">Hire Me</a>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#home" class="mobile-nav-link"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="index.html#about" class="mobile-nav-link"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="index.html#experience" class="mobile-nav-link"><i class="fa fa-briefcase"></i> Experience</a></li>
+            <li><a href="#recent-projects" class="mobile-nav-link"><i class="fa fa-th-large"></i> Innovations</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link active"><i class="fa fa-th-large"></i> All Projects</a></li>
+            <li><a href="index.html#services" class="mobile-nav-link"><i class="fa fa-cogs"></i> Services</a></li>
+        </ul>
+        <a href="hire-me.html" class="btn-primary mobile-hire-btn active"><i class="fa fa-handshake" style="margin-right:8px"></i>Hire Me</a>
+    </div>
 
     <!-- Hire Hero -->
     <section class="hire-hero" data-aos="fade-down">
@@ -394,6 +455,51 @@
                             btn.prop('disabled', false);
                         }, 4000);
                     }
+                });
+            });
+
+            // Mobile Menu Logic
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function toggleMobileMenu() {
+                const isOpen = mobileMenu.classList.contains('open');
+                if (isOpen) {
+                    mobileMenu.classList.remove('open');
+                    mobileMenuOverlay.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    document.body.style.overflow = '';
+                    hamburger.setAttribute('aria-expanded', 'false');
+                } else {
+                    mobileMenu.classList.add('open');
+                    mobileMenuOverlay.classList.add('open');
+                    hamburger.classList.add('open');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                    hamburger.setAttribute('aria-expanded', 'true');
+                }
+            }
+
+            if (hamburger) {
+                hamburger.addEventListener('click', toggleMobileMenu);
+            }
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', toggleMobileMenu);
+            }
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+            }
+
+            // Close menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Slight delay for smooth visual transition
+                    setTimeout(toggleMobileMenu, 150);
+                    
+                    mobileNavLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
                 });
             });
         });
