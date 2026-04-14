@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mirza Naj | Premium Portfolio</title>
     <!-- Favicon -->
     <link rel="icon" href="uploads/logo.png" type="image/ico" sizes="16x16">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+
     <!-- AOS Library for scroll animations -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom Premium CSS -->
     <link rel="stylesheet" href="frontend/css/premium.css">
 </head>
+
 <body>
     <!-- Background Animated Blobs & Particles -->
     <div id="particles-js"></div>
@@ -35,21 +39,49 @@
             <h1>Mirza Naj</h1>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#recent-projects">Projects</a></li>
+            <li><a href="#recent-projects">Innovations</a></li>
+            <li><a href="portfolio.html">All Projects</a></li>
             <li><a href="#services">Services</a></li>
         </ul>
-        <a href="hire-me.html" class="btn-primary">Hire Me</a>
+        <a href="hire-me.html" class="btn-primary nav-hire-btn">Hire Me</a>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about" class="mobile-nav-link"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#experience" class="mobile-nav-link"><i class="fa fa-briefcase"></i> Experience</a></li>
+            <li><a href="#recent-projects" class="mobile-nav-link"><i class="fa fa-th-large"></i> Innovations</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link"><i class="fa fa-th-large"></i> Portfolio</a></li>
+            <li><a href="#services" class="mobile-nav-link"><i class="fa fa-cogs"></i> Services</a></li>
+        </ul>
+        <a href="hire-me.html" class="btn-primary mobile-hire-btn"><i class="fa fa-handshake"
+                style="margin-right:8px"></i>Hire Me</a>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero mb-20">
         <div class="hero-content">
             <!-- Available Badge -->
-            <div data-aos="zoom-in" data-aos-delay="100" style="display: inline-block; padding: 5px 18px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 1px;">
-                <i class="fa fa-circle" style="font-size: 8px; vertical-align: middle; margin-right: 6px; animation: pulse 2s infinite;"></i> AVAILABLE FOR WORK
+            <div data-aos="zoom-in" data-aos-delay="100"
+                style="display: inline-block; padding: 5px 18px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 1px;">
+                <i class="fa fa-circle"
+                    style="font-size: 8px; vertical-align: middle; margin-right: 6px; animation: pulse 2s infinite;"></i>
+                AVAILABLE FOR WORK
             </div>
 
             <span class="hero-greeting" data-aos="zoom-in" data-aos-delay="200">Hello, I'm Mirza Naj</span>
@@ -57,35 +89,50 @@
                 Crafting <span class="highlight">Premium</span> Web Experiences
             </h1>
             <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
-                A passionate Backend / PHP Laravel Developer &amp; UI/UX enthusiast specializing in scalable architecture, secure APIs, and stunning, dynamic user interfaces.
+                A passionate Backend / PHP Laravel Developer &amp; UI/UX enthusiast specializing in scalable
+                architecture, secure APIs, and stunning, dynamic user interfaces.
             </p>
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="#recent-projects" class="btn-primary"><i class="fa fa-rocket" style="margin-right:8px"></i>View My Work</a>
-                <a href="uploads/Resume0303.pdf" class="btn-outline" download><i class="fa fa-download" style="margin-right:8px"></i>Download CV</a>
+                <a href="#recent-projects" class="btn-primary"><i class="fa fa-rocket" style="margin-right:8px"></i>View
+                    My Work</a>
+                <a href="uploads/Resume0303.pdf" class="btn-outline" download><i class="fa fa-download"
+                        style="margin-right:8px"></i>Download CV</a>
             </div>
 
             <!-- Hero Stats -->
-            <div data-aos="fade-up" data-aos-delay="600" style="display: flex; justify-content: center; gap: 3rem; margin-top: 3.5rem; flex-wrap: wrap;">
+            <div data-aos="fade-up" data-aos-delay="600"
+                style="display: flex; justify-content: center; gap: 3rem; margin-top: 3.5rem; flex-wrap: wrap;">
                 <div style="text-align: center;">
-                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">20+</div>
+                    <div
+                        style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        20+</div>
                     <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">PROJECTS DONE</div>
                 </div>
                 <div style="width: 1px; background: var(--border-color); height: 50px; align-self: center;"></div>
                 <div style="text-align: center;">
-                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3+</div>
+                    <div
+                        style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        3+</div>
                     <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">YRS EXPERIENCE</div>
                 </div>
                 <div style="width: 1px; background: var(--border-color); height: 50px; align-self: center;"></div>
                 <div style="text-align: center;">
-                    <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">10+</div>
+                    <div
+                        style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        10+</div>
                     <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px;">HAPPY CLIENTS</div>
                 </div>
             </div>
-            
-            <div class="social-links mt-5" style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1.5rem;" data-aos="fade-up" data-aos-delay="700">
-                <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/najmirza786/" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/najmirza" target="_blank" style="font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+
+            <div class="social-links mt-5"
+                style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1.5rem;" data-aos="fade-up"
+                data-aos-delay="700">
+                <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" style="font-size: 1.5rem;"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/najmirza786/" target="_blank" style="font-size: 1.5rem;"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://github.com/najmirza" target="_blank" style="font-size: 1.5rem;"><i
+                        class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -121,57 +168,93 @@
     <section id="about">
         <div class="section-head" data-aos="fade-up">
             <h2>About &amp; Skills</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">The person behind the code &mdash; my background, skills, and expertise.</p>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">The person behind the code &mdash;
+                my background, skills, and expertise.</p>
         </div>
         <div class="about-grid">
             <div class="glass-panel about-text" data-aos="fade-right">
                 <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Who I Am</h3>
                 <p style="color: var(--text-muted); line-height: 1.9;">
-                    My name is <strong style="color: white;">Mirza Naj</strong>, a Backend Developer with deep expertise in PHP and Laravel. I have a proven track record of building robust RESTful APIs, implementing role-based access control (RBAC), optimizing complex MySQL databases, and developing secure authentication protocols.
+                    My name is <strong style="color: white;">Mirza Naj</strong>, a Backend Developer with deep expertise
+                    in PHP and Laravel. I have a proven track record of building robust RESTful APIs, implementing
+                    role-based access control (RBAC), optimizing complex MySQL databases, and developing secure
+                    authentication protocols.
                 </p>
                 <p style="color: var(--text-muted); line-height: 1.9; margin-top: 1rem;">
-                    Beyond backend engineering, I'm passionate about building applications that are not only performant but also beautifully designed on the frontend using modern CSS, JavaScript, and dynamic libraries.
+                    Beyond backend engineering, I'm passionate about building applications that are not only performant
+                    but also beautifully designed on the frontend using modern CSS, JavaScript, and dynamic libraries.
                 </p>
                 <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 10px;">
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-php" style="margin-right:5px;"></i>PHP</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-laravel" style="margin-right:5px;"></i>Laravel</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fa fa-database" style="margin-right:5px;"></i>MySQL</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-js" style="margin-right:5px;"></i>JavaScript</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-react" style="margin-right:5px;"></i>React.js</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-vuejs" style="margin-right:5px;"></i>Vue.js</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-git-alt" style="margin-right:5px;"></i>Git</span>
-                    <span style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i class="fab fa-bootstrap" style="margin-right:5px;"></i>Bootstrap</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-php" style="margin-right:5px;"></i>PHP</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-laravel" style="margin-right:5px;"></i>Laravel</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fa fa-database" style="margin-right:5px;"></i>MySQL</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-js" style="margin-right:5px;"></i>JavaScript</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-react" style="margin-right:5px;"></i>React.js</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-vuejs" style="margin-right:5px;"></i>Vue.js</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-git-alt" style="margin-right:5px;"></i>Git</span>
+                    <span
+                        style="padding: 5px 14px; background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3); border-radius: 50px; font-size: 0.85rem; color: var(--secondary);"><i
+                            class="fab fa-bootstrap" style="margin-right:5px;"></i>Bootstrap</span>
                     <!-- AI Tools — highlighted distinctly -->
-                    <span style="padding: 5px 14px; background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(79,70,229,0.15)); border: 1px solid rgba(139,92,246,0.5); border-radius: 50px; font-size: 0.85rem; color: #a78bfa; font-weight: 600;"><i class="fa fa-robot" style="margin-right:5px;"></i>AI Tools</span>
+                    <span
+                        style="padding: 5px 14px; background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(79,70,229,0.15)); border: 1px solid rgba(139,92,246,0.5); border-radius: 50px; font-size: 0.85rem; color: #a78bfa; font-weight: 600;"><i
+                            class="fa fa-robot" style="margin-right:5px;"></i>AI Tools</span>
                 </div>
             </div>
-            
+
             <div class="glass-panel" data-aos="fade-left">
-                <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1.5rem;">Core Competencies</h3>
+                <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1.5rem;">Core Competencies
+                </h3>
                 <div class="skills-container">
                     <div class="skill-bar">
                         <div class="skill-info"><span>PHP / Laravel</span><span>95%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 95%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-info"><span>JavaScript / jQuery / AJAX</span><span>90%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 90%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-info"><span>HTML / CSS / Bootstrap</span><span>100%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 100%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-info"><span>Database Architecture (MySQL)</span><span>90%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 90%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-info"><span>API Development &amp; Security</span><span>85%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 85%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-info"><span>RESTful API Design</span><span>88%</span></div>
-                        <div class="skill-progress-bg"><div class="skill-progress" style="width: 88%"></div></div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,13 +265,15 @@
     <section id="recent-projects">
         <div class="section-head" data-aos="fade-up">
             <h2>Recent Innovations</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My latest state-of-the-art developments and integrations.</p>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My latest state-of-the-art
+                developments and integrations.</p>
         </div>
         <div class="projects-grid">
-            
+
             <!-- Project 1 -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="frontend/img/work/crypto_exchange_platform_1774703070219.png" alt="Crypto Exchange Platform" class="project-img">
+                <img src="frontend/img/work/crypto_exchange_platform_1774703070219.png" alt="Crypto Exchange Platform"
+                    class="project-img">
                 <div class="project-content">
                     <div class="project-badges">
                         <span class="badge new">Recent</span>
@@ -197,14 +282,18 @@
                         <span class="badge">WebSockets</span>
                     </div>
                     <h3 class="project-title">Crypto Exchange Platform</h3>
-                    <p class="project-desc">A premium cryptocurrency trading platform featuring live swaps, real-time market data, seamless wallet modal integrations, and a sophisticated dark mode UI for focused trading.</p>
-                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                    <p class="project-desc">A premium cryptocurrency trading platform featuring live swaps, real-time
+                        market data, seamless wallet modal integrations, and a sophisticated dark mode UI for focused
+                        trading.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i
+                            class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
-            
+
             <!-- Project 2 -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="frontend/img/work/data_pro_dashboard_1774703130641.png" alt="Data Pro Dashboard" class="project-img">
+                <img src="frontend/img/work/data_pro_dashboard_1774703130641.png" alt="Data Pro Dashboard"
+                    class="project-img">
                 <div class="project-content">
                     <div class="project-badges">
                         <span class="badge new">Recent</span>
@@ -213,14 +302,18 @@
                         <span class="badge">PHP</span>
                     </div>
                     <h3 class="project-title">Data Pro Dashboard</h3>
-                    <p class="project-desc">A highly interactive smart real-time dashboard delivering complex data analytics. Features include dynamic data grids, comprehensive sidebar routing, and state-of-the-art charting capabilities.</p>
-                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                    <p class="project-desc">A highly interactive smart real-time dashboard delivering complex data
+                        analytics. Features include dynamic data grids, comprehensive sidebar routing, and
+                        state-of-the-art charting capabilities.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i
+                            class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
-            
+
             <!-- Project 3 -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="frontend/img/work/photography_asset_protection_1774703155454.png" alt="Photography Protection" class="project-img">
+                <img src="frontend/img/work/photography_asset_protection_1774703155454.png" alt="Photography Protection"
+                    class="project-img">
                 <div class="project-content">
                     <div class="project-badges">
                         <span class="badge new">Recent</span>
@@ -229,8 +322,11 @@
                         <span class="badge">Frontend</span>
                     </div>
                     <h3 class="project-title">Asset Protection System</h3>
-                    <p class="project-desc">An advanced security implementation for photography portfolios. Includes right-click disabling, drag prevention, source obfuscation, and screenshot deterrence to protect high-value assets securely.</p>
-                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i class="fa fa-arrow-right"></i></a>
+                    <p class="project-desc">An advanced security implementation for photography portfolios. Includes
+                        right-click disabling, drag prevention, source obfuscation, and screenshot deterrence to protect
+                        high-value assets securely.</p>
+                    <a href="#" class="btn-outline" style="padding: 6px 16px; font-size: 0.9rem;">View Details <i
+                            class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -241,7 +337,8 @@
     <section id="experience">
         <div class="section-head" data-aos="fade-up">
             <h2>Professional Journey</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My career trajectory from banking to full-stack engineering.</p>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">My career trajectory from banking
+                to full-stack engineering.</p>
         </div>
         <div class="timeline">
             <!-- Timeline Item 1 -->
@@ -252,7 +349,9 @@
                     <h3 class="timeline-title">PHP Laravel Developer</h3>
                     <div class="timeline-company">Script Dev Technology, Cuttack</div>
                     <p class="timeline-text">
-                        Developing enterprise-level web applications using the Laravel framework. Key responsibilities include designing RESTful APIs, securing authentication systems, and improving database optimization to deliver scalable solutions in a high-performance environment.
+                        Developing enterprise-level web applications using the Laravel framework. Key responsibilities
+                        include designing RESTful APIs, securing authentication systems, and improving database
+                        optimization to deliver scalable solutions in a high-performance environment.
                     </p>
                 </div>
             </div>
@@ -265,7 +364,9 @@
                     <h3 class="timeline-title">PHP Web Developer</h3>
                     <div class="timeline-company">Zanthium Technosoft Pvt Ltd, Uttarakhand</div>
                     <p class="timeline-text">
-                        Oversaw backend architecture and relational database integration (MySQL/PostgreSQL) for various clients. Partnered closely with UI/UX designers to implement pixel-perfect, secure interfaces and optimized legacy PHP systems for higher cross-browser scalability.
+                        Oversaw backend architecture and relational database integration (MySQL/PostgreSQL) for various
+                        clients. Partnered closely with UI/UX designers to implement pixel-perfect, secure interfaces
+                        and optimized legacy PHP systems for higher cross-browser scalability.
                     </p>
                 </div>
             </div>
@@ -278,7 +379,9 @@
                     <h3 class="timeline-title">Business Facilitator</h3>
                     <div class="timeline-company">Union Bank of India, Balichandrapur</div>
                     <p class="timeline-text">
-                        Supported extensive financial inclusion efforts by educating customers, streamlining loan application processes, and promoting a comprehensive suite of banking products without handling direct transactions. Emphasized strong client relations.
+                        Supported extensive financial inclusion efforts by educating customers, streamlining loan
+                        application processes, and promoting a comprehensive suite of banking products without handling
+                        direct transactions. Emphasized strong client relations.
                     </p>
                 </div>
             </div>
@@ -289,28 +392,35 @@
     <section id="other-projects">
         <div class="section-head" data-aos="fade-up">
             <h2>Complete Portfolio</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">A curated selection of my past implementations across multiple domains.</p>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">A curated selection of my past
+                implementations across multiple domains.</p>
         </div>
 
         <div class="projects-grid grid-portfolio">
 
             <!-- Card 1 -->
             <div class="project-card" data-aos="zoom-in" data-aos-delay="50">
-                <img src="frontend/img/work/ecommerce_laravel_1774873325797.png" alt="E-Commerce Laravel" class="project-img">
+                <img src="frontend/img/work/ecommerce_laravel_1774873325797.png" alt="E-Commerce Laravel"
+                    class="project-img">
                 <div class="project-content">
-                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Laravel</span></div>
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Laravel</span>
+                    </div>
                     <h3 class="project-title">E-Commerce Platform</h3>
-                    <p class="project-desc">A fully featured modern e-commerce platform with a sleek shopping cart dashboard and seamless payment logic.</p>
+                    <p class="project-desc">A fully featured modern e-commerce platform with a sleek shopping cart
+                        dashboard and seamless payment logic.</p>
                 </div>
             </div>
 
             <!-- Card 2 -->
             <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                <img src="frontend/img/work/task_management_1774873372292.png" alt="Task Management" class="project-img">
+                <img src="frontend/img/work/task_management_1774873372292.png" alt="Task Management"
+                    class="project-img">
                 <div class="project-content">
-                    <div class="project-badges"><span class="badge">CRM / Tasks</span><span class="badge">Laravel</span></div>
+                    <div class="project-badges"><span class="badge">CRM / Tasks</span><span class="badge">Laravel</span>
+                    </div>
                     <h3 class="project-title">Role-Based Task Manager</h3>
-                    <p class="project-desc">Complex role-based task management system with data grids, permissions, and multi-user tracking features.</p>
+                    <p class="project-desc">Complex role-based task management system with data grids, permissions, and
+                        multi-user tracking features.</p>
                 </div>
             </div>
 
@@ -320,7 +430,8 @@
                 <div class="project-content">
                     <div class="project-badges"><span class="badge">Admin</span><span class="badge">Laravel</span></div>
                     <h3 class="project-title">Admin Console</h3>
-                    <p class="project-desc">Robust administrative panel for complex data management and system oversight.</p>
+                    <p class="project-desc">Robust administrative panel for complex data management and system
+                        oversight.</p>
                 </div>
             </div>
 
@@ -330,7 +441,8 @@
                 <div class="project-content">
                     <div class="project-badges"><span class="badge">User Dash</span><span class="badge">PHP</span></div>
                     <h3 class="project-title">SuccessLine Dashboard</h3>
-                    <p class="project-desc">A fully equipped user dashboard for managing account details and performance analytics.</p>
+                    <p class="project-desc">A fully equipped user dashboard for managing account details and performance
+                        analytics.</p>
                 </div>
             </div>
 
@@ -338,9 +450,11 @@
             <div class="project-card" data-aos="zoom-in" data-aos-delay="250">
                 <img src="frontend/img/work/website3.png" alt="Corporate Landing" class="project-img">
                 <div class="project-content">
-                    <div class="project-badges"><span class="badge">Landing Page</span><span class="badge">HTML5</span></div>
+                    <div class="project-badges"><span class="badge">Landing Page</span><span class="badge">HTML5</span>
+                    </div>
                     <h3 class="project-title">Corporate Landing</h3>
-                    <p class="project-desc">A modern and fully responsive corporate website offering a smooth user experience.</p>
+                    <p class="project-desc">A modern and fully responsive corporate website offering a smooth user
+                        experience.</p>
                 </div>
             </div>
 
@@ -348,9 +462,11 @@
             <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
                 <img src="frontend/img/work/Ecomm.png" alt="Digital Storefront" class="project-img">
                 <div class="project-content">
-                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Cart</span></div>
+                    <div class="project-badges"><span class="badge">E-Commerce</span><span class="badge">Cart</span>
+                    </div>
                     <h3 class="project-title">Digital Storefront</h3>
-                    <p class="project-desc">Robust e-commerce solution facilitating secure checkout and scalable product listings.</p>
+                    <p class="project-desc">Robust e-commerce solution facilitating secure checkout and scalable product
+                        listings.</p>
                 </div>
             </div>
 
@@ -358,7 +474,8 @@
 
         <!-- View All CTA -->
         <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; margin-top: 3.5rem;">
-            <a href="portfolio.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 40px; font-size: 1.1rem;">
+            <a href="portfolio.html" class="btn-primary"
+                style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 40px; font-size: 1.1rem;">
                 <i class="fa fa-th-large"></i>
                 <span>View All Projects</span>
                 <i class="fa fa-arrow-right"></i>
@@ -371,19 +488,22 @@
     <section id="services">
         <div class="section-head" data-aos="fade-up">
             <h2>My Services</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                I offer professional web development services including responsive website design, dynamic web application development, PHP/MySQL backend solutions, and bug fixing.
+            <p
+                style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                I offer professional web development services including responsive website design, dynamic web
+                application development, PHP/MySQL backend solutions, and bug fixing.
             </p>
         </div>
         <div class="projects-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem;">
-            
+
             <!-- Service 1 -->
             <div class="glass-panel service-card" data-aos="fade-up" data-aos-delay="50">
                 <div class="service-icon-wrapper">
                     <img src="frontend/img/service/1.png" alt="Website Development">
                 </div>
                 <h3>Custom Website Development</h3>
-                <p>Build responsive and fully functional websites tailored to client requirements using modern technologies.</p>
+                <p>Build responsive and fully functional websites tailored to client requirements using modern
+                    technologies.</p>
             </div>
 
             <!-- Service 2 -->
@@ -392,7 +512,8 @@
                     <img src="frontend/img/service/2.png" alt="PHP MySQL Solutions">
                 </div>
                 <h3>PHP & MySQL Solutions</h3>
-                <p>Develop secure, database-driven web applications using PHP and MySQL for dynamic content handling.</p>
+                <p>Develop secure, database-driven web applications using PHP and MySQL for dynamic content handling.
+                </p>
             </div>
 
             <!-- Service 3 -->
@@ -401,7 +522,8 @@
                     <img src="frontend/img/service/3.png" alt="Responsive Design">
                 </div>
                 <h3>Responsive Design</h3>
-                <p>Ensure websites are mobile-friendly, fully responsive, and optimized for all screen sizes and devices.</p>
+                <p>Ensure websites are mobile-friendly, fully responsive, and optimized for all screen sizes and
+                    devices.</p>
             </div>
 
             <!-- Service 4 -->
@@ -410,7 +532,8 @@
                     <img src="frontend/img/service/4.png" alt="Bug Fixing">
                 </div>
                 <h3>Maintenance & Bug Fixing</h3>
-                <p>Provide ongoing support, bug fixing, performance tuning, and regular updates to keep your site running smoothly.</p>
+                <p>Provide ongoing support, bug fixing, performance tuning, and regular updates to keep your site
+                    running smoothly.</p>
             </div>
 
             <!-- Service 5 -->
@@ -419,7 +542,8 @@
                     <img src="frontend/img/service/5.png" alt="API Integration">
                 </div>
                 <h3>API Integration</h3>
-                <p>Integrate third-party APIs and internal services to enhance functionality, streamline workflows, and enable real-time data exchange.</p>
+                <p>Integrate third-party APIs and internal services to enhance functionality, streamline workflows, and
+                    enable real-time data exchange.</p>
             </div>
 
             <!-- Service 6 -->
@@ -433,20 +557,29 @@
 
         </div>
     </section>
-    
+
     <!-- CTA / Contact -->
     <section id="contact" style="max-width: 860px; margin: 0 auto; padding-bottom: 80px;">
         <div class="section-head" data-aos="fade-up" style="margin-bottom: 2rem;">
             <h2>Let's Build Something Great</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">Whether you have a specific project in mind, need an advanced backend solution, or want to revamp your architecture &mdash; I'd love to hear from you.</p>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">Whether you have a specific
+                project in mind, need an advanced backend solution, or want to revamp your architecture &mdash; I'd love
+                to hear from you.</p>
         </div>
-        
+
         <!-- Quick Contact Pills -->
-        <div data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <a href="mailto:najmirza7867@gmail.com" target="_blank" style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;" onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
+        <div data-aos="fade-up" data-aos-delay="100"
+            style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <a href="mailto:najmirza7867@gmail.com" target="_blank"
+                style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;"
+                onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'"
+                onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
                 <i class="fa fa-envelope" style="color: var(--secondary);"></i> najmirza7867@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank" style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;" onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
+            <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"
+                style="display: flex; align-items: center; gap: 10px; padding: 10px 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); border-radius: 50px; color: var(--text-muted); transition: all 0.3s; font-size: 0.9rem; text-decoration: none;"
+                onmouseover="this.style.borderColor='var(--secondary)';this.style.color='var(--secondary)'"
+                onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-muted)'">
                 <i class="fab fa-linkedin" style="color: var(--secondary);"></i> LinkedIn Profile
             </a>
         </div>
@@ -455,20 +588,28 @@
             <form id="contactForm" class="contact-form">
                 <div class="form-group" style="position: relative;">
                     <label for="con-name">Your Name</label>
-                    <i class="fa fa-user" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
-                    <input type="text" id="con-name" name="name" class="form-control" placeholder="John Doe" style="padding-left: 45px;" required>
+                    <i class="fa fa-user"
+                        style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
+                    <input type="text" id="con-name" name="name" class="form-control" placeholder="John Doe"
+                        style="padding-left: 45px;" required>
                 </div>
                 <div class="form-group" style="position: relative;">
                     <label for="con-email">Your Email</label>
-                    <i class="fa fa-envelope" style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
-                    <input type="email" id="con-email" name="email" class="form-control" placeholder="john@example.com" style="padding-left: 45px;" required>
+                    <i class="fa fa-envelope"
+                        style="position: absolute; bottom: 15px; left: 18px; color: var(--secondary);"></i>
+                    <input type="email" id="con-email" name="email" class="form-control" placeholder="john@example.com"
+                        style="padding-left: 45px;" required>
                 </div>
                 <div class="form-group" style="grid-column: 1 / -1; position: relative;">
                     <label for="con-message">Project Details</label>
-                    <i class="fa fa-pen" style="position: absolute; top: 43px; left: 18px; color: var(--secondary);"></i>
-                    <textarea id="con-message" name="message" rows="4" class="form-control" placeholder="Tell me about your project needs..." style="padding-left: 45px;" required></textarea>
+                    <i class="fa fa-pen"
+                        style="position: absolute; top: 43px; left: 18px; color: var(--secondary);"></i>
+                    <textarea id="con-message" name="message" rows="4" class="form-control"
+                        placeholder="Tell me about your project needs..." style="padding-left: 45px;"
+                        required></textarea>
                 </div>
-                <button type="submit" class="btn-primary" style="grid-column: 1 / -1; margin-top: 10px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px;">
+                <button type="submit" class="btn-primary"
+                    style="grid-column: 1 / -1; margin-top: 10px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px;">
                     <span>Send Message</span> <i class="fa fa-paper-plane"></i>
                 </button>
             </form>
@@ -495,10 +636,13 @@
         <div class="footer-container">
             <div class="footer-col brand-col" data-aos="fade-up">
                 <h2>Mirza Naj</h2>
-                <p>Passionate Backend / PHP Laravel Developer & UI/UX enthusiast specializing in scalable architecture and stunning interfaces.</p>
+                <p>Passionate Backend / PHP Laravel Developer & UI/UX enthusiast specializing in scalable architecture
+                    and stunning interfaces.</p>
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/najmirza786/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/naj-mirza-20554a224" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/najmirza786/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="https://github.com/najmirza" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -507,18 +651,25 @@
                 <ul>
                     <li><a href="#home"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Home</a></li>
                     <li><a href="#about"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> About</a></li>
-                    <li><a href="#experience"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Experience</a></li>
-                    <li><a href="#recent-projects"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Projects</a></li>
-                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Services</a></li>
+                    <li><a href="#experience"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Experience</a></li>
+                    <li><a href="#recent-projects"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i>
+                            Projects</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Services</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-col services-col" data-aos="fade-up" data-aos-delay="200">
                 <h3>My Services</h3>
                 <ul>
-                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Custom Websites</a></li>
-                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> API Integrations</a></li>
-                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Laravel Solutions</a></li>
-                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Database Design</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Custom
+                            Websites</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> API
+                            Integrations</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Laravel
+                            Solutions</a></li>
+                    <li><a href="#services"><i class="fa fa-chevron-right" style="font-size: 0.6rem;"></i> Database
+                            Design</a></li>
                 </ul>
             </div>
             <div class="footer-col contact-col" data-aos="fade-up" data-aos-delay="300">
@@ -531,7 +682,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Mirza Naj. Crafted with <i class="fa fa-heart" style="color: #e53e3e; margin: 0 5px;"></i> and premium aesthetics.</p>
+            <p>&copy; 2026 Mirza Naj. Crafted with <i class="fa fa-heart" style="color: #e53e3e; margin: 0 5px;"></i>
+                and premium aesthetics.</p>
         </div>
     </footer>
 
@@ -541,8 +693,8 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         // Init Particles JS
-        if(typeof particlesJS !== 'undefined') {
-            particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#0ea5e9"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#4f46e5","opacity":0.4,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#0ea5e9" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#4f46e5", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
         }
 
         // Init AOS
@@ -572,9 +724,9 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement){
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
@@ -584,28 +736,28 @@
         });
 
         // Portfolio Filtering
-        $(document).ready(function(){
-            $('.filter-btn').on('click', function() {
+        $(document).ready(function () {
+            $('.filter-btn').on('click', function () {
                 $('.filter-btn').removeClass('active');
                 $(this).addClass('active');
-                
+
                 let filterValue = $(this).attr('data-filter');
-                
-                if(filterValue === 'all') {
+
+                if (filterValue === 'all') {
                     $('.filter-item').fadeIn(400);
                 } else {
                     $('.filter-item').hide();
                     $('.filter-item.' + filterValue).fadeIn(400);
                 }
-                
+
                 // Fix AOS Trigger Points when height collapses
-                setTimeout(function() {
+                setTimeout(function () {
                     AOS.refresh();
                 }, 450);
             });
 
             // Project Modal Logic
-            $('.project-card').on('click', function() {
+            $('.project-card').on('click', function () {
                 const imgSrc = $(this).find('img').attr('src');
                 const title = $(this).find('.project-title').text();
                 const desc = $(this).find('.project-desc').text();
@@ -618,13 +770,13 @@
                 $('body').css('overflow', 'hidden'); // Prevent background scrolling
             });
 
-            $('#modalClose, #modalBackdrop').on('click', function() {
+            $('#modalClose, #modalBackdrop').on('click', function () {
                 $('#projectModal').removeClass('open');
                 $('body').css('overflow', '');
             });
-            
+
             // Close on Escape key
-            $(document).keyup(function(e) {
+            $(document).keyup(function (e) {
                 if (e.key === "Escape") {
                     $('#projectModal').removeClass('open');
                     $('body').css('overflow', '');
@@ -632,12 +784,12 @@
             });
 
             // Web3Forms AJAX Integration for Contact Section
-            $('#contactForm').on('submit', function(e) {
+            $('#contactForm').on('submit', function (e) {
                 e.preventDefault();
-                
+
                 let btn = $(this).find('button[type="submit"]');
                 let originalText = btn.html();
-                
+
                 btn.html('<i class="fa fa-spinner fa-spin"></i> Sending...');
                 btn.prop('disabled', true);
                 btn.css('opacity', '0.7');
@@ -657,30 +809,76 @@
                         subject: "New Contact Message from Portfolio Homepage!"
                     }),
                     dataType: "json",
-                    success: function(response) {
+                    success: function (response) {
                         btn.html('Message Sent Successfully! <i class="fa fa-check ms-2"></i>');
-                        btn.css({'background': '#10b981', 'opacity': '1', 'border-color': '#10b981', 'box-shadow': '0 0 20px rgba(16, 185, 129, 0.4)'});
+                        btn.css({ 'background': '#10b981', 'opacity': '1', 'border-color': '#10b981', 'box-shadow': '0 0 20px rgba(16, 185, 129, 0.4)' });
                         $('#contactForm')[0].reset();
-                        
+
                         setTimeout(() => {
                             btn.html(originalText);
-                            btn.css({'background': '', 'border-color': '', 'box-shadow': ''});
+                            btn.css({ 'background': '', 'border-color': '', 'box-shadow': '' });
                             btn.prop('disabled', false);
                         }, 4000);
                     },
-                    error: function(err) {
+                    error: function (err) {
                         btn.html('Error Sending. Try Again!');
-                        btn.css({'background': '#ef4444', 'opacity': '1', 'border-color': '#ef4444'});
-                        
+                        btn.css({ 'background': '#ef4444', 'opacity': '1', 'border-color': '#ef4444' });
+
                         setTimeout(() => {
                             btn.html(originalText);
-                            btn.css({'background': '', 'border-color': ''});
+                            btn.css({ 'background': '', 'border-color': '' });
                             btn.prop('disabled', false);
                         }, 4000);
                     }
                 });
             });
+
+            // Mobile Menu Logic
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function toggleMobileMenu() {
+                const isOpen = mobileMenu.classList.contains('open');
+                if (isOpen) {
+                    mobileMenu.classList.remove('open');
+                    mobileMenuOverlay.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    document.body.style.overflow = '';
+                    hamburger.setAttribute('aria-expanded', 'false');
+                } else {
+                    mobileMenu.classList.add('open');
+                    mobileMenuOverlay.classList.add('open');
+                    hamburger.classList.add('open');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                    hamburger.setAttribute('aria-expanded', 'true');
+                }
+            }
+
+            if (hamburger) {
+                hamburger.addEventListener('click', toggleMobileMenu);
+            }
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', toggleMobileMenu);
+            }
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+            }
+
+            // Close menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Slight delay for smooth visual transition
+                    setTimeout(toggleMobileMenu, 150);
+
+                    mobileNavLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
         });
     </script>
 </body>
+
 </html>
